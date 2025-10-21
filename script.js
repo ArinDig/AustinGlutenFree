@@ -15,11 +15,11 @@ const restaurants = [
         website: "picnikrestaurants.com",
         icon: "fas fa-hamburger",
         images: [
-            "images/restaurants/2-1.jpg",
-            "images/restaurants/2-2.jpg", 
-            "images/restaurants/2-3.jpg"
+            "images/restaurants/Picnik_Barton-1.png",
+            "images/restaurants/Picnik_Barton-2.png",
+            "images/restaurants/Picnik_Barton-3.png"
         ],
-        featuredImage: "images/restaurants/2-1.jpg"
+        featuredImage: "images/restaurants/Picnik_Barton-1.png"
     },
     {
         id: 23,
@@ -36,11 +36,11 @@ const restaurants = [
         website: "picnikrestaurants.com",
         icon: "fas fa-hamburger",
         images: [
-            "images/restaurants/7-1.jpg",
-            "images/restaurants/7-2.jpg",
-            "images/restaurants/7-3.jpg"
+            "images/restaurants/Picnik_Burnet-1.png",
+            "images/restaurants/Picnik_Burnet-2.png",
+            "images/restaurants/Picnik_Burnet-3.png"
         ],
-        featuredImage: "images/restaurants/7-1.jpg"
+        featuredImage: "images/restaurants/Picnik_Burnet-1.png"
     },
     {
         id: 3,
