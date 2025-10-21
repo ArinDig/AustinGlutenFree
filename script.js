@@ -171,7 +171,7 @@ const restaurants = [
         features: ["Organic", "Customizable", "Healthy Options"],
         location: "South Austin (South Lamar)",
         address: "4201 S Lamar Blvd, Austin, TX 78704",
-        phone: "(512) 555-0133",
+        phone: "(512) 520-4200",
         website: "iamaflowerchild.com",
         icon: "fas fa-spa"
     },
@@ -186,7 +186,7 @@ const restaurants = [
         features: ["Organic", "Customizable", "Healthy Options"],
         location: "North Austin (Domain)",
         address: "11601 Domain Dr #150, Austin, TX 78758",
-        phone: "(512) 555-0160",
+        phone: "(512) 828-9988",
         website: "iamaflowerchild.com",
         icon: "fas fa-spa"
     },
@@ -201,7 +201,7 @@ const restaurants = [
         features: ["Organic", "Customizable", "Healthy Options"],
         location: "Round Rock",
         address: "2001 S Interstate 35 Frontage Rd, Round Rock, TX 78664",
-        phone: "(512) 555-0161",
+        phone: "(512) 358-8972",
         website: "iamaflowerchild.com",
         icon: "fas fa-spa"
     },
