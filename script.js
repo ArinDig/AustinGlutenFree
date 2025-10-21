@@ -335,11 +335,11 @@ const restaurants = [
         website: "bombakeshop.com",
         icon: "fas fa-birthday-cake",
         images: [
-            "images/restaurants/22-1.jpg",
-            "images/restaurants/22-2.jpg",
-            "images/restaurants/22-3.jpg"
+            "images/restaurants/Bom-1.png",
+            "images/restaurants/Bom-2.png",
+            "images/restaurants/Bom-3.png"
         ],
-        featuredImage: "images/restaurants/22-1.jpg"
+        featuredImage: "images/restaurants/Bom-1.png"
     },
     {
         id: 23,
