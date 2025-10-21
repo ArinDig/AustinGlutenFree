@@ -309,11 +309,14 @@
                             </div>
                         </div>
                     </div>
-                    <form class="contact-form">
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                        <textarea placeholder="Tell us about the restaurant..." rows="5" required></textarea>
+                    <form class="contact-form" action="https://formspree.io/f/xanyegye" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="hidden" name="_subject" value="New Restaurant Recommendation - Austin Gluten Free">
+                        <input type="hidden" name="_cc" value="info@austinglutenfree.com">
+                        <textarea name="message" placeholder="Tell us about the restaurant..." rows="5" required></textarea>
                         <button type="submit">Send Recommendation</button>
+                        <p class="form-status" style="display: none; margin-top: 1rem; text-align: center;"></p>
                     </form>
                 </div>
             </div>

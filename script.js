@@ -610,29 +610,61 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Contact form handling
+// Contact form handling with Formspree
 const contactForm = document.querySelector('.contact-form');
+const formStatus = document.querySelector('.form-status');
+
 if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
+    contactForm.addEventListener('submit', async function(e) {
         e.preventDefault();
         
-        // Get form data
-        const formData = new FormData(this);
-        const name = this.querySelector('input[type="text"]').value;
-        const email = this.querySelector('input[type="email"]').value;
-        const message = this.querySelector('textarea').value;
+        const submitButton = this.querySelector('button[type="submit"]');
+        const originalButtonText = submitButton.textContent;
         
-        // Simple validation
-        if (!name || !email || !message) {
-            alert('Please fill in all fields.');
-            return;
+        // Show loading state
+        submitButton.textContent = 'Sending...';
+        submitButton.disabled = true;
+        
+        try {
+            // Send form data to Formspree
+            const response = await fetch(this.action, {
+                method: 'POST',
+                body: new FormData(this),
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+            
+            if (response.ok) {
+                // Success
+                formStatus.textContent = '✅ Thank you! Your recommendation has been sent successfully. We\'ll review it and add it to our directory!';
+                formStatus.style.display = 'block';
+                formStatus.style.color = '#28a745';
+                formStatus.style.fontWeight = '600';
+                this.reset();
+            } else {
+                // Error
+                formStatus.textContent = '❌ Oops! There was a problem sending your message. Please email us directly at info@austinglutenfree.com';
+                formStatus.style.display = 'block';
+                formStatus.style.color = '#dc3545';
+                formStatus.style.fontWeight = '600';
+            }
+        } catch (error) {
+            // Network error
+            formStatus.textContent = '❌ Network error. Please check your connection and try again, or email us at info@austinglutenfree.com';
+            formStatus.style.display = 'block';
+            formStatus.style.color = '#dc3545';
+            formStatus.style.fontWeight = '600';
         }
         
-        // Simulate form submission
-        alert('Thank you for your recommendation! We\'ll review it and add it to our directory if it meets our criteria.');
+        // Reset button
+        submitButton.textContent = originalButtonText;
+        submitButton.disabled = false;
         
-        // Reset form
-        this.reset();
+        // Hide status message after 10 seconds
+        setTimeout(() => {
+            formStatus.style.display = 'none';
+        }, 10000);
     });
 }
 
