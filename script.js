@@ -11,7 +11,7 @@ const restaurants = [
         features: ["100% GF", "Paleo Options", "Organic Ingredients"],
         location: "Downtown Austin (Barton Springs)",
         address: "1720 Barton Springs Rd, Austin, TX 78704",
-        phone: "(512) 555-0124",
+        phone: "(512) 477-7878",
         website: "picnikrestaurants.com",
         icon: "fas fa-hamburger",
         images: [
@@ -32,7 +32,7 @@ const restaurants = [
         features: ["100% GF", "Paleo Options", "Organic Ingredients"],
         location: "North Austin (Burnet Road)",
         address: "4801 Burnet Rd, Austin, TX 78756",
-        phone: "(512) 555-0162",
+        phone: "(512) 524-2999",
         website: "picnikrestaurants.com",
         icon: "fas fa-hamburger"
     },
@@ -47,7 +47,7 @@ const restaurants = [
         features: ["Plant-Based", "Organic", "Community Space"],
         location: "East Austin",
         address: "1000 E 11th St, Austin, TX 78702",
-        phone: "(512) 555-0125",
+        phone: "(512) 476-2535",
         website: "casadeluz.org",
         icon: "fas fa-pepper-hot",
         images: [
