@@ -170,11 +170,11 @@ const restaurants = [
         website: "snapkitchen.com",
         icon: "fas fa-shopping-bag",
         images: [
-            "images/restaurants/9-1.jpg",
-            "images/restaurants/9-2.jpg",
-            "images/restaurants/9-3.jpg"
+            "images/restaurants/Snap_Kit-1.png",
+            "images/restaurants/Snap_Kit-2.png",
+            "images/restaurants/Snap_Kit-3.png"
         ],
-        featuredImage: "images/restaurants/9-1.jpg"
+        featuredImage: "images/restaurants/Snap_Kit-1.png"
     },
     {
         id: 10,
@@ -476,7 +476,13 @@ const restaurants = [
         address: "600 Congress Ave, Austin, TX 78701",
         phone: "(512) 555-0164",
         website: "snapkitchen.com",
-        icon: "fas fa-shopping-bag"
+        icon: "fas fa-shopping-bag",
+        images: [
+            "images/restaurants/Snap_Kit-1.png",
+            "images/restaurants/Snap_Kit-2.png",
+            "images/restaurants/Snap_Kit-3.png"
+        ],
+        featuredImage: "images/restaurants/Snap_Kit-1.png"
     },
     {
         id: 29,
@@ -493,11 +499,11 @@ const restaurants = [
         website: "snapkitchen.com",
         icon: "fas fa-shopping-bag",
         images: [
-            "images/restaurants/29-1.jpg",
-            "images/restaurants/29-2.jpg",
-            "images/restaurants/29-3.jpg"
+            "images/restaurants/Snap_Kit-1.png",
+            "images/restaurants/Snap_Kit-2.png",
+            "images/restaurants/Snap_Kit-3.png"
         ],
-        featuredImage: "images/restaurants/29-1.jpg"
+        featuredImage: "images/restaurants/Snap_Kit-1.png"
     }
 ];
 
