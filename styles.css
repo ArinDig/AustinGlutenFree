@@ -871,6 +871,28 @@ body {
     .features {
         grid-template-columns: 1fr;
     }
+    
+    /* Mobile Ad Adjustments */
+    .ad-leaderboard {
+        display: none; /* Hide leaderboard on mobile, show responsive ad instead */
+    }
+    
+    .ad-sidebar {
+        float: none;
+        margin: 1.5rem auto;
+    }
+    
+    .seo-content {
+        padding: 1.5rem;
+    }
+    
+    .seo-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .seo-content h4 {
+        font-size: 1.2rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -891,6 +913,95 @@ body {
     .contact h2 {
         font-size: 2rem;
     }
+}
+
+/* Ad Container Styles - Optimized for AdSense */
+.ad-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    padding: 1rem 0;
+    background: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.ad-placeholder {
+    background: #ffffff;
+    border: 1px dashed #dee2e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 90px;
+}
+
+.ad-leaderboard .ad-placeholder {
+    width: 728px;
+    height: 90px;
+    max-width: 100%;
+}
+
+.ad-rectangle .ad-placeholder {
+    width: 300px;
+    height: 250px;
+    max-width: 100%;
+}
+
+.ad-sidebar {
+    float: right;
+    margin: 0 0 1.5rem 1.5rem;
+}
+
+.ad-label {
+    color: #6c757d;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* SEO Content Styles */
+.section-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #495057;
+    max-width: 900px;
+    margin: 0 auto 2rem;
+    line-height: 1.7;
+}
+
+.seo-content {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    clear: both;
+}
+
+.seo-content h3 {
+    font-size: 1.8rem;
+    color: #2d5016;
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.seo-content h4 {
+    font-size: 1.3rem;
+    color: #4a7c59;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.seo-content p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #495057;
+    margin-bottom: 1rem;
 }
 
 /* Loading Animation */

@@ -1,0 +1,30 @@
+# robots.txt for austinglutenfree.com
+# Optimized for search engine crawling
+
+User-agent: *
+Allow: /
+Allow: /images/
+Allow: /styles.css
+Allow: /script.js
+
+# Sitemap location
+Sitemap: https://austinglutenfree.com/sitemap.xml
+
+# Crawl-delay for polite bots
+Crawl-delay: 1
+
+# Block common bad bots
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+# Google AdSense verification
+User-agent: Mediapartners-Google
+Allow: /
+
+# Allow Google image bot
+User-agent: Googlebot-Image
+Allow: /images/
+
