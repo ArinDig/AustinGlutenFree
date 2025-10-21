@@ -347,7 +347,13 @@ const restaurants = [
         location: "South Austin",
         phone: "(512) 555-0149",
         website: "oddduckaustin.com",
-        icon: "fas fa-utensils"
+        icon: "fas fa-utensils",
+        images: [
+            "images/restaurants/Odd_Duck.jpg",
+            "images/restaurants/23-2.jpg",
+            "images/restaurants/23-3.jpg"
+        ],
+        featuredImage: "images/restaurants/Odd_Duck.jpg"
     },
     {
         id: 28,
