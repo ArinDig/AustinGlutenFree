@@ -552,6 +552,11 @@ function renderRestaurants(restaurantsToRender = filteredRestaurants) {
                     <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(restaurant.address || restaurant.name + ' ' + restaurant.location)}" target="_blank" rel="noopener noreferrer" class="action-btn">
                         <i class="fas fa-directions"></i> Directions
                     </a>
+                    ${restaurant.website ? `
+                    <a href="https://${restaurant.website}" target="_blank" rel="noopener noreferrer" class="action-btn">
+                        <i class="fas fa-globe"></i> Website
+                    </a>
+                    ` : ''}
                     <button class="action-btn share-btn" 
                             data-name="${restaurant.name}"
                             data-cuisine="${formatCuisine(restaurant.cuisine)}"
