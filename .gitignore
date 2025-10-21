@@ -1,0 +1,42 @@
+# Mac OS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Node modules (if you add any JS tooling later)
+node_modules/
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.log
+*.tmp
+.cache/
+
+# Scripts we don't need in repo
+download_remaining_images.sh
+update_cuisine_images.sh
+download_images.py
+create_images.py
+generate_images.html
+
