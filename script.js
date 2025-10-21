@@ -191,11 +191,11 @@ const restaurants = [
         website: "redashgrill.com",
         icon: "fas fa-fire",
         images: [
-            "images/restaurants/10-1.jpg",
-            "images/restaurants/10-2.jpg",
-            "images/restaurants/10-3.jpg"
+            "images/restaurants/RedAsh-1.png",
+            "images/restaurants/RedAsh-2.png",
+            "images/restaurants/RedAsh-3.png"
         ],
-        featuredImage: "images/restaurants/10-1.jpg"
+        featuredImage: "images/restaurants/RedAsh-1.png"
     },
     {
         id: 11,
