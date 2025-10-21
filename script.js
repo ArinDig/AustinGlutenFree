@@ -34,7 +34,13 @@ const restaurants = [
         address: "4801 Burnet Rd, Austin, TX 78756",
         phone: "(512) 524-2999",
         website: "picnikrestaurants.com",
-        icon: "fas fa-hamburger"
+        icon: "fas fa-hamburger",
+        images: [
+            "images/restaurants/7-1.jpg",
+            "images/restaurants/7-2.jpg",
+            "images/restaurants/7-3.jpg"
+        ],
+        featuredImage: "images/restaurants/7-1.jpg"
     },
     {
         id: 3,
@@ -70,7 +76,13 @@ const restaurants = [
         address: "3600 N Capital of Texas Hwy, Austin, TX 78746",
         phone: "(512) 555-0126",
         website: "truefoodkitchen.com",
-        icon: "fas fa-leaf"
+        icon: "fas fa-leaf",
+        images: [
+            "images/restaurants/8-1.jpg",
+            "images/restaurants/8-2.jpg",
+            "images/restaurants/8-3.jpg"
+        ],
+        featuredImage: "images/restaurants/8-1.jpg"
     },
     {
         id: 5,
@@ -100,7 +112,13 @@ const restaurants = [
         address: "621 E 7th St, Austin, TX 78701",
         phone: "(512) 275-0852",
         website: "koriente.com",
-        icon: "fas fa-bowl-food"
+        icon: "fas fa-bowl-food",
+        images: [
+            "images/restaurants/6-1.jpg",
+            "images/restaurants/6-2.jpg",
+            "images/restaurants/6-3.jpg"
+        ],
+        featuredImage: "images/restaurants/6-1.jpg"
     },
     {
         id: 7,
@@ -129,7 +147,13 @@ const restaurants = [
         location: "South Austin",
         phone: "(512) 555-0130",
         website: "vinaigrette.com",
-        icon: "fas fa-seedling"
+        icon: "fas fa-seedling",
+        images: [
+            "images/restaurants/8-1.jpg",
+            "images/restaurants/8-2.jpg",
+            "images/restaurants/8-3.jpg"
+        ],
+        featuredImage: "images/restaurants/8-1.jpg"
     },
     {
         id: 9,
@@ -144,7 +168,13 @@ const restaurants = [
         address: "11066 Pecan Park Blvd, Cedar Park, TX 78613",
         phone: "(512) 555-0131",
         website: "snapkitchen.com",
-        icon: "fas fa-shopping-bag"
+        icon: "fas fa-shopping-bag",
+        images: [
+            "images/restaurants/9-1.jpg",
+            "images/restaurants/9-2.jpg",
+            "images/restaurants/9-3.jpg"
+        ],
+        featuredImage: "images/restaurants/9-1.jpg"
     },
     {
         id: 10,
@@ -158,7 +188,13 @@ const restaurants = [
         location: "East Austin",
         phone: "(512) 555-0132",
         website: "thebeerplant.com",
-        icon: "fas fa-wine-glass-alt"
+        icon: "fas fa-wine-glass-alt",
+        images: [
+            "images/restaurants/10-1.jpg",
+            "images/restaurants/10-2.jpg",
+            "images/restaurants/10-3.jpg"
+        ],
+        featuredImage: "images/restaurants/10-1.jpg"
     },
     {
         id: 11,
@@ -173,7 +209,13 @@ const restaurants = [
         address: "4201 S Lamar Blvd, Austin, TX 78704",
         phone: "(512) 520-4200",
         website: "iamaflowerchild.com",
-        icon: "fas fa-spa"
+        icon: "fas fa-spa",
+        images: [
+            "images/restaurants/11-1.jpg",
+            "images/restaurants/11-2.jpg",
+            "images/restaurants/11-3.jpg"
+        ],
+        featuredImage: "images/restaurants/11-1.jpg"
     },
     {
         id: 21,
@@ -188,7 +230,13 @@ const restaurants = [
         address: "11601 Domain Dr #150, Austin, TX 78758",
         phone: "(512) 828-9988",
         website: "iamaflowerchild.com",
-        icon: "fas fa-spa"
+        icon: "fas fa-spa",
+        images: [
+            "images/restaurants/21-1.jpg",
+            "images/restaurants/21-2.jpg",
+            "images/restaurants/21-3.jpg"
+        ],
+        featuredImage: "images/restaurants/21-1.jpg"
     },
     {
         id: 22,
@@ -203,7 +251,13 @@ const restaurants = [
         address: "2001 S Interstate 35 Frontage Rd, Round Rock, TX 78664",
         phone: "(512) 358-8972",
         website: "iamaflowerchild.com",
-        icon: "fas fa-spa"
+        icon: "fas fa-spa",
+        images: [
+            "images/restaurants/22-1.jpg",
+            "images/restaurants/22-2.jpg",
+            "images/restaurants/22-3.jpg"
+        ],
+        featuredImage: "images/restaurants/22-1.jpg"
     },
     {
         id: 12,
@@ -217,7 +271,13 @@ const restaurants = [
         location: "East Austin",
         phone: "(512) 555-0134",
         website: "sweetritual.com",
-        icon: "fas fa-ice-cream"
+        icon: "fas fa-ice-cream",
+        images: [
+            "images/restaurants/12-1.jpg",
+            "images/restaurants/12-2.jpg",
+            "images/restaurants/12-3.jpg"
+        ],
+        featuredImage: "images/restaurants/12-1.jpg"
     },
     {
         id: 13,
@@ -231,7 +291,13 @@ const restaurants = [
         location: "East Austin",
         phone: "(512) 555-0135",
         website: "birdbirdbiscuit.com",
-        icon: "fas fa-egg"
+        icon: "fas fa-egg",
+        images: [
+            "images/restaurants/13-1.jpg",
+            "images/restaurants/13-2.jpg",
+            "images/restaurants/13-3.jpg"
+        ],
+        featuredImage: "images/restaurants/13-1.jpg"
     },
     {
         id: 14,
@@ -246,7 +312,13 @@ const restaurants = [
         address: "409 W 2nd St, Austin, TX 78701",
         phone: "(512) 555-0143",
         website: "salttraders.com",
-        icon: "fas fa-fish"
+        icon: "fas fa-fish",
+        images: [
+            "images/restaurants/14-1.jpg",
+            "images/restaurants/14-2.jpg",
+            "images/restaurants/14-3.jpg"
+        ],
+        featuredImage: "images/restaurants/14-1.jpg"
     },
     {
         id: 22,
@@ -261,7 +333,13 @@ const restaurants = [
         address: "4919 Airport Blvd #102, Austin, TX 78751",
         phone: "(512) 555-0144",
         website: "bombakeshop.com",
-        icon: "fas fa-birthday-cake"
+        icon: "fas fa-birthday-cake",
+        images: [
+            "images/restaurants/22-1.jpg",
+            "images/restaurants/22-2.jpg",
+            "images/restaurants/22-3.jpg"
+        ],
+        featuredImage: "images/restaurants/22-1.jpg"
     },
     {
         id: 23,
@@ -275,7 +353,13 @@ const restaurants = [
         location: "East Austin",
         phone: "(512) 555-0145",
         website: "zucchinikill.com",
-        icon: "fas fa-music"
+        icon: "fas fa-music",
+        images: [
+            "images/restaurants/23-1.jpg",
+            "images/restaurants/23-2.jpg",
+            "images/restaurants/23-3.jpg"
+        ],
+        featuredImage: "images/restaurants/23-1.jpg"
     },
     {
         id: 24,
@@ -289,7 +373,13 @@ const restaurants = [
         location: "South Austin",
         phone: "(512) 555-0146",
         website: "kaprow.com",
-        icon: "fas fa-bowl-food"
+        icon: "fas fa-bowl-food",
+        images: [
+            "images/restaurants/24-1.jpg",
+            "images/restaurants/24-2.jpg",
+            "images/restaurants/24-3.jpg"
+        ],
+        featuredImage: "images/restaurants/24-1.jpg"
     },
     {
         id: 24,
@@ -304,7 +394,13 @@ const restaurants = [
         address: "11601 Domain Dr, Austin, TX 78758",
         phone: "(512) 555-0163",
         website: "truefoodkitchen.com",
-        icon: "fas fa-leaf"
+        icon: "fas fa-leaf",
+        images: [
+            "images/restaurants/24-1.jpg",
+            "images/restaurants/24-2.jpg",
+            "images/restaurants/24-3.jpg"
+        ],
+        featuredImage: "images/restaurants/24-1.jpg"
     },
     {
         id: 25,
@@ -318,7 +414,13 @@ const restaurants = [
         location: "East Austin",
         phone: "(512) 555-0147",
         website: "diasmarket.com",
-        icon: "fas fa-shopping-cart"
+        icon: "fas fa-shopping-cart",
+        images: [
+            "images/restaurants/25-1.jpg",
+            "images/restaurants/25-2.jpg",
+            "images/restaurants/25-3.jpg"
+        ],
+        featuredImage: "images/restaurants/25-1.jpg"
     },
     {
         id: 26,
@@ -333,7 +435,13 @@ const restaurants = [
         address: "801 S Lamar Blvd, Austin, TX 78704",
         phone: "(512) 555-0148",
         website: "uchiaustin.com",
-        icon: "fas fa-fish"
+        icon: "fas fa-fish",
+        images: [
+            "images/restaurants/26-1.jpg",
+            "images/restaurants/26-2.jpg",
+            "images/restaurants/26-3.jpg"
+        ],
+        featuredImage: "images/restaurants/26-1.jpg"
     },
     {
         id: 27,
@@ -383,7 +491,13 @@ const restaurants = [
         address: "3300 Bee Cave Rd, Austin, TX 78746",
         phone: "(512) 555-0165",
         website: "snapkitchen.com",
-        icon: "fas fa-shopping-bag"
+        icon: "fas fa-shopping-bag",
+        images: [
+            "images/restaurants/29-1.jpg",
+            "images/restaurants/29-2.jpg",
+            "images/restaurants/29-3.jpg"
+        ],
+        featuredImage: "images/restaurants/29-1.jpg"
     }
 ];
 
