@@ -437,11 +437,11 @@ const restaurants = [
         website: "uchiaustin.com",
         icon: "fas fa-fish",
         images: [
-            "images/restaurants/26-1.jpg",
-            "images/restaurants/26-2.jpg",
-            "images/restaurants/26-3.jpg"
+            "images/restaurants/Uchi-1.png",
+            "images/restaurants/Uchi-2.png",
+            "images/restaurants/Uchi-3.png"
         ],
-        featuredImage: "images/restaurants/26-1.jpg"
+        featuredImage: "images/restaurants/Uchi-1.png"
     },
     {
         id: 27,
