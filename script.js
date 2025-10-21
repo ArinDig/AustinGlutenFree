@@ -632,16 +632,16 @@ function renderRestaurants(restaurantsToRender = filteredRestaurants) {
         <div class="restaurant-card" data-id="${restaurant.id}">
             <div class="restaurant-image-gallery">
                 <div class="main-image">
-                    <img src="images/restaurants/${restaurant.id}-1.jpg" alt="${restaurant.name}" class="restaurant-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <img src="${restaurant.images && restaurant.images[0] ? restaurant.images[0] : 'images/restaurants/' + restaurant.id + '-1.jpg'}" alt="${restaurant.name}" class="restaurant-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     <div class="restaurant-icon-fallback" style="display: none;">
                         <i class="${restaurant.icon}"></i>
                     </div>
                 </div>
                 <div class="thumbnail-images">
-                    <img src="images/restaurants/${restaurant.id}-2.jpg" alt="${restaurant.name} interior" class="thumbnail" onerror="this.style.display='none';">
-                    <img src="images/restaurants/${restaurant.id}-3.jpg" alt="${restaurant.name} food" class="thumbnail" onerror="this.style.display='none';">
+                    <img src="${restaurant.images && restaurant.images[1] ? restaurant.images[1] : 'images/restaurants/' + restaurant.id + '-2.jpg'}" alt="${restaurant.name} interior" class="thumbnail" onerror="this.style.display='none';">
+                    <img src="${restaurant.images && restaurant.images[2] ? restaurant.images[2] : 'images/restaurants/' + restaurant.id + '-3.jpg'}" alt="${restaurant.name} food" class="thumbnail" onerror="this.style.display='none';">
                     <div class="more-photos">
-                        <span>+3</span>
+                        <span>+${restaurant.images ? restaurant.images.length : 3}</span>
                     </div>
                 </div>
             </div>
