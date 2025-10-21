@@ -97,8 +97,8 @@ const restaurants = [
         description: "Asian fusion restaurant with many gluten-free options. Fresh, healthy bowls and traditional Asian dishes made gluten-free.",
         features: ["Asian Fusion", "Fresh Bowls", "Healthy Options"],
         location: "Downtown Austin",
-        address: "311 Colorado St, Austin, TX 78701",
-        phone: "(512) 555-0128",
+        address: "621 E 7th St, Austin, TX 78701",
+        phone: "(512) 275-0852",
         website: "koriente.com",
         icon: "fas fa-bowl-food"
     },
