@@ -515,7 +515,7 @@ function renderRestaurants(restaurantsToRender = filteredRestaurants) {
     restaurantCount.textContent = `${restaurantsToRender.length} restaurant${restaurantsToRender.length === 1 ? '' : 's'} found`;
     
     restaurantGrid.innerHTML = restaurantsToRender.map(restaurant => `
-        <div class="restaurant-card">
+        <div class="restaurant-card" data-id="${restaurant.id}">
             <div class="restaurant-image-gallery">
                 <div class="main-image">
                     <img src="images/restaurants/${restaurant.id}-1.jpg" alt="${restaurant.name}" class="restaurant-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
@@ -827,3 +827,161 @@ renderRestaurants = function(restaurantsToRender = filteredRestaurants) {
     originalRenderRestaurants(restaurantsToRender);
     setTimeout(animateRestaurantCards, 100);
 };
+
+// Photo Gallery Lightbox
+let currentGalleryImages = [];
+let currentGalleryIndex = 0;
+let currentRestaurantName = '';
+
+// Create lightbox element
+const lightbox = document.createElement('div');
+lightbox.className = 'gallery-lightbox';
+lightbox.innerHTML = `
+    <div class="lightbox-header">
+        <div class="lightbox-title"></div>
+        <button class="lightbox-close" aria-label="Close gallery">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+    <div class="lightbox-content">
+        <button class="lightbox-nav lightbox-prev" aria-label="Previous image">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <img src="" alt="" class="lightbox-image">
+        <button class="lightbox-nav lightbox-next" aria-label="Next image">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="lightbox-counter"></div>
+        <div class="lightbox-thumbnails"></div>
+    </div>
+`;
+document.body.appendChild(lightbox);
+
+// Lightbox elements
+const lightboxImage = lightbox.querySelector('.lightbox-image');
+const lightboxTitle = lightbox.querySelector('.lightbox-title');
+const lightboxClose = lightbox.querySelector('.lightbox-close');
+const lightboxPrev = lightbox.querySelector('.lightbox-prev');
+const lightboxNext = lightbox.querySelector('.lightbox-next');
+const lightboxCounter = lightbox.querySelector('.lightbox-counter');
+const lightboxThumbnails = lightbox.querySelector('.lightbox-thumbnails');
+
+// Open lightbox
+function openLightbox(images, index, restaurantName) {
+    currentGalleryImages = images;
+    currentGalleryIndex = index;
+    currentRestaurantName = restaurantName;
+    
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    
+    updateLightbox();
+}
+
+// Close lightbox
+function closeLightbox() {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+// Update lightbox content
+function updateLightbox() {
+    const currentImage = currentGalleryImages[currentGalleryIndex];
+    
+    lightboxImage.src = currentImage;
+    lightboxImage.alt = `${currentRestaurantName} - Photo ${currentGalleryIndex + 1}`;
+    lightboxTitle.textContent = currentRestaurantName;
+    lightboxCounter.textContent = `${currentGalleryIndex + 1} / ${currentGalleryImages.length}`;
+    
+    // Update navigation buttons
+    lightboxPrev.disabled = currentGalleryIndex === 0;
+    lightboxNext.disabled = currentGalleryIndex === currentGalleryImages.length - 1;
+    
+    // Update thumbnails
+    lightboxThumbnails.innerHTML = currentGalleryImages.map((img, idx) => `
+        <img src="${img}" 
+             alt="Thumbnail ${idx + 1}" 
+             class="lightbox-thumbnail ${idx === currentGalleryIndex ? 'active' : ''}"
+             data-index="${idx}">
+    `).join('');
+}
+
+// Navigate to previous image
+function showPrevImage() {
+    if (currentGalleryIndex > 0) {
+        currentGalleryIndex--;
+        updateLightbox();
+    }
+}
+
+// Navigate to next image
+function showNextImage() {
+    if (currentGalleryIndex < currentGalleryImages.length - 1) {
+        currentGalleryIndex++;
+        updateLightbox();
+    }
+}
+
+// Event listeners for lightbox
+lightboxClose.addEventListener('click', closeLightbox);
+lightboxPrev.addEventListener('click', showPrevImage);
+lightboxNext.addEventListener('click', showNextImage);
+
+// Close on background click
+lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+        closeLightbox();
+    }
+});
+
+// Thumbnail clicks
+lightboxThumbnails.addEventListener('click', (e) => {
+    if (e.target.classList.contains('lightbox-thumbnail')) {
+        currentGalleryIndex = parseInt(e.target.dataset.index);
+        updateLightbox();
+    }
+});
+
+// Keyboard navigation
+document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('active')) return;
+    
+    if (e.key === 'Escape') {
+        closeLightbox();
+    } else if (e.key === 'ArrowLeft') {
+        showPrevImage();
+    } else if (e.key === 'ArrowRight') {
+        showNextImage();
+    }
+});
+
+// Add click handlers to restaurant images
+document.addEventListener('click', (e) => {
+    // Check if clicked element is a restaurant image or thumbnail
+    const imageGallery = e.target.closest('.restaurant-image-gallery');
+    if (!imageGallery) return;
+    
+    const restaurantCard = e.target.closest('.restaurant-card');
+    if (!restaurantCard) return;
+    
+    // Get restaurant data
+    const restaurantId = parseInt(restaurantCard.dataset.id || restaurantCard.querySelector('[data-id]')?.dataset.id);
+    const restaurant = restaurants.find(r => r.id === restaurantId);
+    
+    if (!restaurant || !restaurant.images) return;
+    
+    // Determine which image was clicked
+    let clickedIndex = 0;
+    
+    if (e.target.classList.contains('restaurant-photo')) {
+        clickedIndex = 0; // Main image
+    } else if (e.target.classList.contains('thumbnail')) {
+        // Find which thumbnail was clicked
+        const thumbnails = imageGallery.querySelectorAll('.thumbnail');
+        clickedIndex = Array.from(thumbnails).indexOf(e.target) + 1;
+    } else if (e.target.closest('.more-photos')) {
+        clickedIndex = 0; // Start from first image
+    }
+    
+    openLightbox(restaurant.images, clickedIndex, restaurant.name);
+});
