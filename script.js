@@ -97,7 +97,13 @@ const restaurants = [
         address: "1900 S 1st St, Austin, TX 78704",
         phone: "(512) 555-0127",
         website: "bouldincreekcafe.com",
-        icon: "fas fa-coffee"
+        icon: "fas fa-coffee",
+        images: [
+            "images/restaurants/Bouldin-1.png",
+            "images/restaurants/Bouldin-2.png",
+            "images/restaurants/Bouldin-3.png"
+        ],
+        featuredImage: "images/restaurants/Bouldin-1.png"
     },
     {
         id: 6,
