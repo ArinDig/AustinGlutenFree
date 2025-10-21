@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Generator</title>
+</head>
+<body>
+    <h1>Generating Images...</h1>
+    <div id="status"></div>
+    
+    <script>
+        function createHeroBackground() {
+            const canvas = document.createElement('canvas');
+            canvas.width = 1920;
+            canvas.height = 1080;
+            const ctx = canvas.getContext('2d');
+            
+            // Create wooden background
+            const gradient = ctx.createLinearGradient(0, 0, 1920, 1080);
+            gradient.addColorStop(0, '#8B6434');
+            gradient.addColorStop(0.5, '#A57443');
+            gradient.addColorStop(1, '#C49974');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, 1920, 1080);
+            
+            // Add wooden texture
+            ctx.fillStyle = '#A57443';
+            for (let i = 0; i < 1920; i += 40) {
+                for (let j = 0; j < 1080; j += 40) {
+                    if ((i + j) % 80 === 0) {
+                        ctx.fillRect(i, j, 20, 20);
+                    }
+                }
+            }
+            
+            // Add plates
+            ctx.fillStyle = '#4B66B4';
+            ctx.beginPath();
+            ctx.arc(400, 400, 50, 0, 2 * Math.PI);
+            ctx.fill();
+            
+            ctx.fillStyle = '#343434';
+            ctx.beginPath();
+            ctx.arc(600, 400, 45, 0, 2 * Math.PI);
+            ctx.fill();
+            
+            ctx.fillStyle = '#666666';
+            ctx.beginPath();
+            ctx.arc(800, 400, 50, 0, 2 * Math.PI);
+            ctx.fill();
+            
+            // Add food items
+            ctx.fillStyle = '#FF6600';
+            ctx.beginPath();
+            ctx.arc(450, 450, 15, 0, 2 * Math.PI);
+            ctx.fill();
+            
+            ctx.fillStyle = '#FF9900';
+            ctx.beginPath();
+            ctx.arc(650, 450, 15, 0, 2 * Math.PI);
+            ctx.fill();
+            
+            ctx.fillStyle = '#00B300';
+            ctx.beginPath();
+            ctx.arc(850, 450, 15, 0, 2 * Math.PI);
+            ctx.fill();
+            
+            // Add text
+            ctx.fillStyle = 'rgba(45, 80, 22, 0.8)';
+            ctx.fillRect(760, 500, 400, 80);
+            
+            ctx.fillStyle = 'white';
+            ctx.font = '48px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText('Explore Gluten-Free Dining', 960, 550);
+            
+            // Convert to blob and download
+            canvas.toBlob(function(blob) {
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'hero-background.jpg';
+                a.click();
+                URL.revokeObjectURL(url);
+                document.getElementById('status').innerHTML += '✅ Hero background created<br>';
+            }, 'image/jpeg', 0.9);
+        }
+        
+        function createRestaurantImage(restaurantId, name, cuisine) {
+            const canvas = document.createElement('canvas');
+            canvas.width = 400;
+            canvas.height = 300;
+            const ctx = canvas.getContext('2d');
+            
+            // Wooden background
+            const gradient = ctx.createLinearGradient(0, 0, 400, 300);
+            gradient.addColorStop(0, '#8B6434');
+            gradient.addColorStop(0.5, '#A57443');
+            gradient.addColorStop(1, '#C49974');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, 400, 300);
+            
+            // Add plates
+            ctx.fillStyle = '#4B66B4';
+            ctx.beginPath();
+            ctx.arc(100, 120, 40, 0, 2 * Math.PI);
+            ctx.fill();
+            
+            ctx.fillStyle = '#343434';
+            ctx.beginPath();
+            ctx.arc(200, 120, 35, 0, 2 * Math.PI);
+            ctx.fill();
+            
+            ctx.fillStyle = '#666666';
+            ctx.beginPath();
+            ctx.arc(300, 120, 40, 0, 2 * Math.PI);
+            ctx.fill();
+            
+            // Add food
+            ctx.fillStyle = '#FF6600';
+            ctx.beginPath();
+            ctx.arc(120, 180, 20, 0, 2 * Math.PI);
+            ctx.fill();
+            
+            ctx.fillStyle = '#FF9900';
+            ctx.beginPath();
+            ctx.arc(220, 180, 20, 0, 2 * Math.PI);
+            ctx.fill();
+            
+            ctx.fillStyle = '#00B300';
+            ctx.beginPath();
+            ctx.arc(320, 180, 20, 0, 2 * Math.PI);
+            ctx.fill();
+            
+            // Add text
+            ctx.fillStyle = '#2D5016';
+            ctx.font = 'bold 18px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText(name, 200, 250);
+            
+            ctx.fillStyle = '#6C757D';
+            ctx.font = '12px Arial';
+            ctx.fillText(cuisine, 200, 270);
+            
+            // Convert to blob and download
+            canvas.toBlob(function(blob) {
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `restaurant-${restaurantId}.jpg`;
+                a.click();
+                URL.revokeObjectURL(url);
+                document.getElementById('status').innerHTML += `✅ ${name} image created<br>`;
+            }, 'image/jpeg', 0.9);
+        }
+        
+        // Generate images
+        setTimeout(() => {
+            createHeroBackground();
+            
+            const restaurants = [
+                [1, "Wild Wood Bakehouse", "Bakery"],
+                [2, "Picnik", "American"],
+                [3, "Casa de Luz", "Mexican"],
+                [4, "True Food Kitchen", "Mediterranean"],
+                [5, "Bouldin Creek Cafe", "Cafe"]
+            ];
+            
+            restaurants.forEach(([id, name, cuisine], index) => {
+                setTimeout(() => createRestaurantImage(id, name, cuisine), index * 1000);
+            });
+        }, 1000);
+    </script>
+</body>
+</html>

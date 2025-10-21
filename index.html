@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Austin Gluten Free - Restaurant Directory</title>
+    <meta name="description" content="Discover the best gluten-free restaurants in Austin, Texas. Safe dining for everyone with our comprehensive directory of celiac-friendly restaurants.">
+    <meta name="keywords" content="gluten free, austin, restaurants, celiac, dining, texas, safe food">
+    <meta name="author" content="Austin Gluten Free">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌾</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="images/logos/logo.png" alt="Austin Gluten Free" class="nav-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="nav-logo-fallback" style="display: none;">
+                        <i class="fas fa-leaf"></i>
+                        <span>Austin Gluten Free</span>
+                    </div>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#restaurants" class="nav-link">Restaurants</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-background">
+                <!-- Background image from austinglutenfree.com -->
+                <img src="images/hero-background.jpg" alt="Austin gluten-free dining" class="hero-bg-image">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Certified Safe</span>
+                </div>
+                <h1>Discover Gluten-Free Dining in Austin</h1>
+                <p>Find the best gluten-free restaurants, cafes, and bakeries in Austin, Texas. Safe dining for everyone.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">26+</span>
+                        <span class="stat-label">Restaurants</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">7</span>
+                        <span class="stat-label">Neighborhoods</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Safe</span>
+                    </div>
+                </div>
+                <div class="hero-search">
+                    <input type="text" id="searchInput" placeholder="Search restaurants, cuisines, or neighborhoods...">
+                    <button id="searchBtn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="filters">
+            <div class="container">
+                <div class="filter-group">
+                    <label for="cuisineFilter">Cuisine:</label>
+                    <select id="cuisineFilter">
+                        <option value="">All Cuisines</option>
+                        <option value="american">American</option>
+                        <option value="mexican">Mexican</option>
+                        <option value="italian">Italian</option>
+                        <option value="asian">Asian</option>
+                        <option value="mediterranean">Mediterranean</option>
+                        <option value="bakery">Bakery</option>
+                        <option value="cafe">Cafe</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="neighborhoodFilter">Neighborhood:</label>
+                    <select id="neighborhoodFilter">
+                        <option value="">All Neighborhoods</option>
+                        <option value="downtown">Downtown</option>
+                        <option value="south-austin">South Austin</option>
+                        <option value="east-austin">East Austin</option>
+                        <option value="west-austin">West Austin</option>
+                        <option value="north-austin">North Austin</option>
+                        <option value="cedar-park">Cedar Park</option>
+                        <option value="round-rock">Round Rock</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="priceFilter">Price Range:</label>
+                    <select id="priceFilter">
+                        <option value="">All Prices</option>
+                        <option value="$">$ (Budget-friendly)</option>
+                        <option value="$$">$$ (Moderate)</option>
+                        <option value="$$$">$$$ (Upscale)</option>
+                        <option value="$$$$">$$$$ (Fine Dining)</option>
+                    </select>
+                </div>
+                <button id="clearFilters" class="clear-btn">Clear Filters</button>
+            </div>
+        </section>
+
+        <!-- Restaurants Section -->
+        <section id="restaurants" class="restaurants">
+            <div class="container">
+                <h2>Gluten-Free Restaurants in Austin</h2>
+                <div id="restaurantCount" class="restaurant-count"></div>
+                <div id="restaurantGrid" class="restaurant-grid">
+                    <!-- Restaurant cards will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Austin Gluten Free</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Austin Gluten Free is your comprehensive directory for gluten-free dining in Austin, Texas. We understand the challenges of finding safe, delicious gluten-free options, and we're here to make your dining experience worry-free.</p>
+                        <p>Our curated list includes restaurants that offer dedicated gluten-free menus, certified gluten-free kitchens, and establishments that take celiac disease and gluten sensitivity seriously.</p>
+                        <div class="features">
+                            <div class="feature">
+                                <i class="fas fa-shield-alt"></i>
+                                <h3>Safety First</h3>
+                                <p>All restaurants are vetted for gluten-free safety protocols</p>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-star"></i>
+                                <h3>Quality Assured</h3>
+                                <p>Only the best gluten-free dining experiences in Austin</p>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-users"></i>
+                                <h3>Community Driven</h3>
+                                <p>Reviews and recommendations from the gluten-free community</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Have a restaurant to suggest?</h3>
+                        <p>Know of a great gluten-free restaurant in Austin that we should include? We'd love to hear from you!</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span><a href="mailto:info@austinglutenfree.com">info@austinglutenfree.com</a></span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Austin, Texas</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Tell us about the restaurant..." rows="5" required></textarea>
+                        <button type="submit">Send Recommendation</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Austin Gluten Free</h3>
+                    <p>Your trusted guide to gluten-free dining in Austin, Texas.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-yelp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#restaurants">Restaurants</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Popular Areas</h4>
+                    <ul>
+                        <li><a href="#">Downtown Austin</a></li>
+                        <li><a href="#">South Austin</a></li>
+                        <li><a href="#">East Austin</a></li>
+                        <li><a href="#">Cedar Park</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Austin Gluten Free. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
