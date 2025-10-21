@@ -552,7 +552,12 @@ function renderRestaurants(restaurantsToRender = filteredRestaurants) {
                     <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(restaurant.address || restaurant.name + ' ' + restaurant.location)}" target="_blank" rel="noopener noreferrer" class="action-btn">
                         <i class="fas fa-directions"></i> Directions
                     </a>
-                    <button class="action-btn">
+                    <button class="action-btn share-btn" 
+                            data-name="${restaurant.name}"
+                            data-cuisine="${formatCuisine(restaurant.cuisine)}"
+                            data-location="${restaurant.location}"
+                            data-address="${restaurant.address || ''}"
+                            data-website="${restaurant.website || ''}">
                         <i class="fas fa-share"></i> Share
                     </button>
                 </div>
@@ -609,6 +614,122 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// Share button functionality
+document.addEventListener('click', function(e) {
+    if (e.target.closest('.share-btn')) {
+        e.preventDefault();
+        const btn = e.target.closest('.share-btn');
+        const name = btn.dataset.name;
+        const cuisine = btn.dataset.cuisine;
+        const location = btn.dataset.location;
+        const address = btn.dataset.address;
+        const website = btn.dataset.website;
+        
+        const shareText = `Check out ${name} - ${cuisine} restaurant in ${location}! 🍽️\n\nFind it on Austin Gluten Free: https://austinglutenfree.com`;
+        const shareUrl = 'https://austinglutenfree.com';
+        
+        // Check if Web Share API is supported (works on mobile for SMS, etc.)
+        if (navigator.share) {
+            navigator.share({
+                title: `${name} - Gluten-Free in Austin`,
+                text: shareText,
+                url: shareUrl
+            })
+            .then(() => {
+                console.log('Shared successfully');
+            })
+            .catch((error) => {
+                if (error.name !== 'AbortError') {
+                    // If share fails, fall back to copy
+                    fallbackShare(shareText);
+                }
+            });
+        } else {
+            // Fallback for desktop: Show share modal with options
+            showShareModal(name, cuisine, location, shareText, shareUrl);
+        }
+    }
+});
+
+// Fallback share - copy to clipboard
+function fallbackShare(text) {
+    if (navigator.clipboard) {
+        navigator.clipboard.writeText(text)
+            .then(() => {
+                alert('✅ Restaurant info copied to clipboard! You can now paste it to share.');
+            })
+            .catch(() => {
+                alert('Share text:\n\n' + text);
+            });
+    } else {
+        alert('Share text:\n\n' + text);
+    }
+}
+
+// Show share modal for desktop with multiple options
+function showShareModal(name, cuisine, location, text, url) {
+    const encodedText = encodeURIComponent(text);
+    const encodedUrl = encodeURIComponent(url);
+    const encodedTitle = encodeURIComponent(`${name} - Gluten-Free in Austin`);
+    
+    // Create modal
+    const modal = document.createElement('div');
+    modal.style.cssText = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10000;
+        padding: 20px;
+    `;
+    
+    modal.innerHTML = `
+        <div style="background: white; border-radius: 12px; padding: 2rem; max-width: 400px; width: 100%;">
+            <h3 style="margin: 0 0 1.5rem 0; color: #2d5016; font-size: 1.5rem;">Share ${name}</h3>
+            <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}" target="_blank" 
+                   style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; background: #1877f2; color: white; text-decoration: none; border-radius: 8px; font-weight: 500;">
+                    <i class="fab fa-facebook" style="font-size: 1.25rem;"></i> Share on Facebook
+                </a>
+                <a href="https://twitter.com/intent/tweet?text=${encodedText}&url=${encodedUrl}" target="_blank"
+                   style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; background: #1da1f2; color: white; text-decoration: none; border-radius: 8px; font-weight: 500;">
+                    <i class="fab fa-twitter" style="font-size: 1.25rem;"></i> Share on Twitter
+                </a>
+                <a href="mailto:?subject=${encodedTitle}&body=${encodedText}" 
+                   style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; background: #4a7c59; color: white; text-decoration: none; border-radius: 8px; font-weight: 500;">
+                    <i class="fas fa-envelope" style="font-size: 1.25rem;"></i> Share via Email
+                </a>
+                <a href="sms:?&body=${encodedText}" 
+                   style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; background: #25d366; color: white; text-decoration: none; border-radius: 8px; font-weight: 500;">
+                    <i class="fas fa-sms" style="font-size: 1.25rem;"></i> Share via Text/SMS
+                </a>
+                <button onclick="navigator.clipboard.writeText('${text.replace(/'/g, "\\'")}').then(() => { alert('✅ Copied to clipboard!'); this.closest('[style*=fixed]').remove(); })" 
+                   style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; background: #6c757d; color: white; border: none; border-radius: 8px; font-weight: 500; cursor: pointer; font-size: 1rem;">
+                    <i class="fas fa-copy" style="font-size: 1.25rem;"></i> Copy to Clipboard
+                </button>
+            </div>
+            <button onclick="this.closest('[style*=fixed]').remove()" 
+                    style="margin-top: 1.5rem; width: 100%; padding: 0.75rem; background: #e9ecef; color: #495057; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 1rem;">
+                Close
+            </button>
+        </div>
+    `;
+    
+    // Close modal on background click
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            modal.remove();
+        }
+    });
+    
+    document.body.appendChild(modal);
+}
 
 // Contact form handling with mailto fallback
 const contactForm = document.querySelector('.contact-form');
