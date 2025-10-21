@@ -2,27 +2,6 @@
 const restaurants = [
     {
         id: 1,
-        name: "Wild Wood Bakehouse",
-        cuisine: "bakery",
-        neighborhood: "south-austin",
-        price: "$$",
-        rating: 4.8,
-        description: "Dedicated gluten-free bakery offering fresh breads, pastries, and desserts. Everything is made in a 100% gluten-free facility.",
-        features: ["Dedicated GF Kitchen", "Fresh Daily", "Catering Available"],
-        location: "South Austin",
-        address: "3016 Guadalupe St, Austin, TX 78705",
-        phone: "(512) 555-0123",
-        website: "wildwoodbakehouse.com",
-        icon: "fas fa-birthday-cake",
-        images: [
-            "images/restaurants/1-1.jpg",
-            "images/restaurants/1-2.jpg", 
-            "images/restaurants/1-3.jpg"
-        ],
-        featuredImage: "images/restaurants/1-1.jpg"
-    },
-    {
-        id: 2,
         name: "Picnik - Barton Springs",
         cuisine: "american",
         neighborhood: "downtown",
@@ -70,7 +49,13 @@ const restaurants = [
         address: "1000 E 11th St, Austin, TX 78702",
         phone: "(512) 555-0125",
         website: "casadeluz.org",
-        icon: "fas fa-pepper-hot"
+        icon: "fas fa-pepper-hot",
+        images: [
+            "images/restaurants/casa_de_luz.jpg",
+            "images/restaurants/3-2.jpg",
+            "images/restaurants/3-3.jpg"
+        ],
+        featuredImage: "images/restaurants/casa_de_luz.jpg"
     },
     {
         id: 4,
