@@ -321,7 +321,7 @@ const restaurants = [
         featuredImage: "images/restaurants/14-1.jpg"
     },
     {
-        id: 22,
+        id: 30,
         name: "Bom Bakeshop",
         cuisine: "bakery",
         neighborhood: "south-austin",
@@ -342,7 +342,7 @@ const restaurants = [
         featuredImage: "images/restaurants/Bom-1.png"
     },
     {
-        id: 23,
+        id: 31,
         name: "Zucchini Kill",
         cuisine: "bakery",
         neighborhood: "east-austin",
@@ -382,7 +382,7 @@ const restaurants = [
         featuredImage: "images/restaurants/24-1.jpg"
     },
     {
-        id: 24,
+        id: 32,
         name: "True Food Kitchen - Domain",
         cuisine: "mediterranean",
         neighborhood: "north-austin",
