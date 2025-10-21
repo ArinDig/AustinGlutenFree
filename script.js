@@ -610,56 +610,42 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Contact form handling with Formspree
+// Contact form handling with mailto fallback
 const contactForm = document.querySelector('.contact-form');
 const formStatus = document.querySelector('.form-status');
 
 if (contactForm) {
-    contactForm.addEventListener('submit', async function(e) {
+    contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
         
-        const submitButton = this.querySelector('button[type="submit"]');
-        const originalButtonText = submitButton.textContent;
+        // Get form values
+        const name = document.getElementById('contactName').value;
+        const email = document.getElementById('contactEmail').value;
+        const message = document.getElementById('contactMessage').value;
         
-        // Show loading state
-        submitButton.textContent = 'Sending...';
-        submitButton.disabled = true;
+        // Create email body
+        const subject = encodeURIComponent('New Restaurant Recommendation - Austin Gluten Free');
+        const body = encodeURIComponent(
+            `Name: ${name}\n` +
+            `Email: ${email}\n` +
+            `\n` +
+            `Message:\n${message}`
+        );
         
-        try {
-            // Send form data to Formspree
-            const response = await fetch(this.action, {
-                method: 'POST',
-                body: new FormData(this),
-                headers: {
-                    'Accept': 'application/json'
-                }
-            });
-            
-            if (response.ok) {
-                // Success
-                formStatus.textContent = '✅ Thank you! Your recommendation has been sent successfully. We\'ll review it and add it to our directory!';
-                formStatus.style.display = 'block';
-                formStatus.style.color = '#28a745';
-                formStatus.style.fontWeight = '600';
-                this.reset();
-            } else {
-                // Error
-                formStatus.textContent = '❌ Oops! There was a problem sending your message. Please email us directly at info@austinglutenfree.com';
-                formStatus.style.display = 'block';
-                formStatus.style.color = '#dc3545';
-                formStatus.style.fontWeight = '600';
-            }
-        } catch (error) {
-            // Network error
-            formStatus.textContent = '❌ Network error. Please check your connection and try again, or email us at info@austinglutenfree.com';
-            formStatus.style.display = 'block';
-            formStatus.style.color = '#dc3545';
-            formStatus.style.fontWeight = '600';
-        }
+        // Create mailto link
+        const mailtoLink = `mailto:info@austinglutenfree.com?subject=${subject}&body=${body}`;
         
-        // Reset button
-        submitButton.textContent = originalButtonText;
-        submitButton.disabled = false;
+        // Open default email client
+        window.location.href = mailtoLink;
+        
+        // Show success message
+        formStatus.textContent = '✅ Your email client should open now! If it doesn\'t, please email us directly at info@austinglutenfree.com';
+        formStatus.style.display = 'block';
+        formStatus.style.color = '#28a745';
+        formStatus.style.fontWeight = '600';
+        
+        // Reset form
+        this.reset();
         
         // Hide status message after 10 seconds
         setTimeout(() => {
