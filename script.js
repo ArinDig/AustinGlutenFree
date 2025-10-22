@@ -527,11 +527,12 @@ const restaurants = [
         website: "hopdoddy.com",
         icon: "fas fa-hamburger",
         images: [
-            "images/restaurants/33-1.jpg",
-            "images/restaurants/33-2.jpg",
-            "images/restaurants/33-3.jpg"
+            "images/restaurants/HopDoddy-1.png",
+            "images/restaurants/HopDoddy-2.png",
+            "images/restaurants/HopDoddy-3.png",
+            "images/restaurants/HopDoddy-4.png"
         ],
-        featuredImage: "images/restaurants/33-1.jpg"
+        featuredImage: "images/restaurants/HopDoddy-1.png"
     },
     {
         id: 34,
@@ -611,11 +612,12 @@ const restaurants = [
         website: "hopdoddy.com",
         icon: "fas fa-hamburger",
         images: [
-            "images/restaurants/37-1.jpg",
-            "images/restaurants/37-2.jpg",
-            "images/restaurants/37-3.jpg"
+            "images/restaurants/HopDoddy-1.png",
+            "images/restaurants/HopDoddy-2.png",
+            "images/restaurants/HopDoddy-3.png",
+            "images/restaurants/HopDoddy-4.png"
         ],
-        featuredImage: "images/restaurants/37-1.jpg"
+        featuredImage: "images/restaurants/HopDoddy-1.png"
     }
 ];
 
