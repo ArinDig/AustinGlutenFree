@@ -595,6 +595,27 @@ const restaurants = [
             "images/restaurants/36-3.jpg"
         ],
         featuredImage: "images/restaurants/36-1.jpg"
+    },
+    {
+        id: 37,
+        name: "Lil'Doddy Burger Lab",
+        cuisine: "american",
+        neighborhood: "south-austin",
+        price: "$$",
+        rating: 4.5,
+        description: "Hopdoddy's fast-casual concept offering gluten-free burgers with GF buns. Counter service with drive-thru option. Features burgers, fries, salads, and shakes.",
+        features: ["Gluten-Free Buns", "Fast Casual", "Drive-Thru"],
+        location: "South Austin (West Oak Hill)",
+        address: "4625 West William Cannon Drive, Suite 3, Austin, TX 78749",
+        phone: "(512) 535-0300",
+        website: "hopdoddy.com",
+        icon: "fas fa-hamburger",
+        images: [
+            "images/restaurants/37-1.jpg",
+            "images/restaurants/37-2.jpg",
+            "images/restaurants/37-3.jpg"
+        ],
+        featuredImage: "images/restaurants/37-1.jpg"
     }
 ];
 
