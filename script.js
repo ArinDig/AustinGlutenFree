@@ -570,11 +570,12 @@ const restaurants = [
         website: "interorestaurant.com",
         icon: "fas fa-utensils",
         images: [
-            "images/restaurants/35-1.jpg",
-            "images/restaurants/35-2.jpg",
-            "images/restaurants/35-3.jpg"
+            "images/restaurants/Intero-1.png",
+            "images/restaurants/Intero-2.png",
+            "images/restaurants/Intero-3.png",
+            "images/restaurants/Intero-4.png"
         ],
-        featuredImage: "images/restaurants/35-1.jpg"
+        featuredImage: "images/restaurants/Intero-1.png"
     },
     {
         id: 36,
