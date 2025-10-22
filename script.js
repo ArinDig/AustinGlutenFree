@@ -592,11 +592,11 @@ const restaurants = [
         website: "postinowinecafe.com",
         icon: "fas fa-wine-glass-alt",
         images: [
-            "images/restaurants/36-1.jpg",
-            "images/restaurants/36-2.jpg",
-            "images/restaurants/36-3.jpg"
+            "images/restaurants/Postino-1.png",
+            "images/restaurants/Postino-2.png",
+            "images/restaurants/Postino-3.png"
         ],
-        featuredImage: "images/restaurants/36-1.jpg"
+        featuredImage: "images/restaurants/Postino-1.png"
     },
     {
         id: 37,
