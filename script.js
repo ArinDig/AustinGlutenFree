@@ -120,11 +120,12 @@ const restaurants = [
         website: "koriente.com",
         icon: "fas fa-bowl-food",
         images: [
-            "images/restaurants/6-1.jpg",
-            "images/restaurants/6-2.jpg",
-            "images/restaurants/6-3.jpg"
+            "images/restaurants/Koriente-1.png",
+            "images/restaurants/Koriente-2.png",
+            "images/restaurants/Koriente-3.png",
+            "images/restaurants/Koriente-4.png"
         ],
-        featuredImage: "images/restaurants/6-1.jpg"
+        featuredImage: "images/restaurants/Koriente-1.png"
     },
     {
         id: 7,
