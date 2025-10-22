@@ -50,6 +50,19 @@ body {
     text-decoration: none;
 }
 
+.nav-logo a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-logo h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+}
+
 .nav-logo-img {
     height: 40px;
     width: auto;
