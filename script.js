@@ -140,7 +140,13 @@ const restaurants = [
         address: "4400 N Lamar Blvd #120, Austin, TX 78756",
         phone: "(512) 555-0129",
         website: "thesteepingroom.com",
-        icon: "fas fa-mug-hot"
+        icon: "fas fa-mug-hot",
+        images: [
+            "images/restaurants/7-1.jpg",
+            "images/restaurants/7-2.jpg",
+            "images/restaurants/7-3.jpg"
+        ],
+        featuredImage: "images/restaurants/7-1.jpg"
     },
     {
         id: 8,
