@@ -788,6 +788,9 @@ function renderRestaurants(restaurantsToRender = filteredRestaurants) {
                     `).join('')}
                 </div>
                 <div class="restaurant-actions">
+                    <a href="restaurants/${restaurant.name.toLowerCase().replace(/\s+/g, '-').replace(/,/g, '').replace(/'/g, '')}.html" class="action-btn action-btn-primary">
+                        <i class="fas fa-info-circle"></i> View Details
+                    </a>
                     <a href="tel:${restaurant.phone}" class="action-btn">
                         <i class="fas fa-phone"></i> Call
                     </a>

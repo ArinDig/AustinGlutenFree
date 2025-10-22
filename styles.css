@@ -509,6 +509,18 @@ body {
     font-size: 0.8rem;
 }
 
+.action-btn-primary {
+    background: #3d7c17;
+    color: white;
+    border-color: #3d7c17;
+    font-weight: 600;
+}
+
+.action-btn-primary:hover {
+    background: #2d5016;
+    border-color: #2d5016;
+}
+
 .feature-tag {
     background: #e8f5e8;
     color: #2d5016;
@@ -1192,5 +1204,306 @@ body {
     
     .lightbox-thumbnails {
         display: none;
+    }
+}
+
+/* Restaurant Detail Pages */
+.restaurant-detail-page {
+    padding-top: 80px;
+    min-height: 100vh;
+}
+
+.breadcrumbs {
+    padding: 1rem 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.breadcrumbs a {
+    color: #3d7c17;
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.restaurant-hero {
+    background: #f8f9fa;
+    padding: 3rem 0;
+}
+
+.restaurant-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.restaurant-images .main-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.restaurant-info h1 {
+    font-size: 2.5rem;
+    color: #2d5016;
+    margin-bottom: 1rem;
+}
+
+.rating {
+    margin-bottom: 1rem;
+}
+
+.stars {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.rating-number {
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: 600;
+}
+
+.quick-info {
+    display: flex;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+}
+
+.quick-info span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #555;
+    font-size: 1rem;
+}
+
+.quick-info i {
+    color: #3d7c17;
+}
+
+.features {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin: 1.5rem 0;
+}
+
+.feature-badge {
+    background: #e8f5e9;
+    color: #2d5016;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-call {
+    background: #3d7c17;
+    color: white;
+}
+
+.btn-call:hover {
+    background: #2d5016;
+    transform: translateY(-2px);
+}
+
+.btn-directions {
+    background: #4285f4;
+    color: white;
+}
+
+.btn-directions:hover {
+    background: #3367d6;
+    transform: translateY(-2px);
+}
+
+.btn-website {
+    background: #fff;
+    color: #3d7c17;
+    border: 2px solid #3d7c17;
+}
+
+.btn-website:hover {
+    background: #3d7c17;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.restaurant-details {
+    padding: 4rem 0;
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+}
+
+.main-content .section {
+    margin-bottom: 3rem;
+}
+
+.main-content h2 {
+    color: #2d5016;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.gf-features {
+    list-style: none;
+    padding: 0;
+}
+
+.gf-features li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #e0e0e0;
+    color: #555;
+}
+
+.gf-features li:before {
+    content: "✓ ";
+    color: #3d7c17;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.related-restaurants, .nearby-restaurants {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.related-restaurants h3, .nearby-restaurants h3 {
+    color: #2d5016;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.related-restaurants ul, .nearby-restaurants ul {
+    list-style: none;
+    padding: 0;
+}
+
+.related-restaurants li, .nearby-restaurants li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.related-restaurants li:last-child, .nearby-restaurants li:last-child {
+    border-bottom: none;
+}
+
+.related-restaurants a, .nearby-restaurants a {
+    color: #3d7c17;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.related-restaurants a:hover, .nearby-restaurants a:hover {
+    text-decoration: underline;
+}
+
+.sidebar .contact-card {
+    background: white;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.contact-card h3 {
+    color: #2d5016;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.contact-info p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.contact-info i {
+    color: #3d7c17;
+    margin-right: 0.5rem;
+}
+
+.contact-info a {
+    color: #3d7c17;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.back-to-directory {
+    margin-top: 2rem;
+}
+
+.btn-primary {
+    background: #3d7c17;
+    color: white;
+    text-align: center;
+    display: block;
+    padding: 1rem;
+}
+
+.btn-primary:hover {
+    background: #2d5016;
+}
+
+@media (max-width: 768px) {
+    .restaurant-header {
+        grid-template-columns: 1fr;
+    }
+    
+    .detail-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .restaurant-info h1 {
+        font-size: 2rem;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+    }
+    
+    .btn {
+        width: 100%;
+        justify-content: center;
     }
 }
