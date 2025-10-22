@@ -300,11 +300,11 @@ const restaurants = [
         website: "birdbirdbiscuit.com",
         icon: "fas fa-egg",
         images: [
-            "images/restaurants/13-1.jpg",
-            "images/restaurants/13-2.jpg",
-            "images/restaurants/13-3.jpg"
+            "images/restaurants/BirdBird-1.png",
+            "images/restaurants/BirdBird-2.png",
+            "images/restaurants/BirdBird-3.png"
         ],
-        featuredImage: "images/restaurants/13-1.jpg"
+        featuredImage: "images/restaurants/BirdBird-1.png"
     },
     {
         id: 14,
