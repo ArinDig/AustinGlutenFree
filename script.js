@@ -511,6 +511,90 @@ const restaurants = [
             "images/restaurants/Snap_Kit-3.png"
         ],
         featuredImage: "images/restaurants/Snap_Kit-1.png"
+    },
+    {
+        id: 33,
+        name: "Hopdoddy Burger Bar - South Congress",
+        cuisine: "american",
+        neighborhood: "south-austin",
+        price: "$$",
+        rating: 4.6,
+        description: "Popular burger joint with gluten-free buns and lettuce wrap options. Dedicated gluten-free fryer for fries. Menu includes Classic, Magic Shroom, and El Diablo burgers.",
+        features: ["Gluten-Free Buns", "GF Fries", "Craft Burgers"],
+        location: "South Austin (South Congress)",
+        address: "1400 S Congress Ave Suite A190, Austin, TX 78704",
+        phone: "(512) 243-7505",
+        website: "hopdoddy.com",
+        icon: "fas fa-hamburger",
+        images: [
+            "images/restaurants/33-1.jpg",
+            "images/restaurants/33-2.jpg",
+            "images/restaurants/33-3.jpg"
+        ],
+        featuredImage: "images/restaurants/33-1.jpg"
+    },
+    {
+        id: 34,
+        name: "Il Brutto",
+        cuisine: "italian",
+        neighborhood: "east-austin",
+        price: "$$$",
+        rating: 4.4,
+        description: "Italian restaurant known for handmade gluten-free pasta. Offers a dedicated gluten-free menu with various pasta dishes and Italian specialties.",
+        features: ["Handmade GF Pasta", "Italian Cuisine", "Dedicated GF Menu"],
+        location: "East Austin",
+        address: "1601 E 6th St, Austin, TX 78702",
+        phone: "(512) 916-4808",
+        website: "ilbruttoaustin.com",
+        icon: "fas fa-utensils",
+        images: [
+            "images/restaurants/34-1.jpg",
+            "images/restaurants/34-2.jpg",
+            "images/restaurants/34-3.jpg"
+        ],
+        featuredImage: "images/restaurants/34-1.jpg"
+    },
+    {
+        id: 35,
+        name: "Intero",
+        cuisine: "italian",
+        neighborhood: "east-austin",
+        price: "$$$",
+        rating: 4.7,
+        description: "Italian restaurant with gluten-free pasta options. Focuses on whole animal butchery and seasonal ingredients. Staff accommodates dietary restrictions.",
+        features: ["GF Pasta", "Seasonal Menu", "Italian Cuisine"],
+        location: "East Austin",
+        address: "2612 E Cesar Chavez St Suite 105, Austin, TX 78702",
+        phone: "(512) 501-4561",
+        website: "interorestaurant.com",
+        icon: "fas fa-utensils",
+        images: [
+            "images/restaurants/35-1.jpg",
+            "images/restaurants/35-2.jpg",
+            "images/restaurants/35-3.jpg"
+        ],
+        featuredImage: "images/restaurants/35-1.jpg"
+    },
+    {
+        id: 36,
+        name: "Postino - South Lamar",
+        cuisine: "cafe",
+        neighborhood: "south-austin",
+        price: "$$",
+        rating: 4.7,
+        description: "Wine café offering gluten-free bread for bruschetta and sandwiches. Known for wine selection and casual dining atmosphere.",
+        features: ["Gluten-Free Bread", "Wine Bar", "Bruschetta"],
+        location: "South Austin (South Lamar)",
+        address: "1301 S Lamar Blvd Suite 102, Austin, TX 78704",
+        phone: "(512) 457-9500",
+        website: "postinowinecafe.com",
+        icon: "fas fa-wine-glass-alt",
+        images: [
+            "images/restaurants/36-1.jpg",
+            "images/restaurants/36-2.jpg",
+            "images/restaurants/36-3.jpg"
+        ],
+        featuredImage: "images/restaurants/36-1.jpg"
     }
 ];
 
