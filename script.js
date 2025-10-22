@@ -322,11 +322,11 @@ const restaurants = [
         website: "salttraders.com",
         icon: "fas fa-fish",
         images: [
-            "images/restaurants/14-1.jpg",
-            "images/restaurants/14-2.jpg",
-            "images/restaurants/14-3.jpg"
+            "images/restaurants/SaltTraders-1.png",
+            "images/restaurants/SaltTraders-2.png",
+            "images/restaurants/SaltTraders-3.png"
         ],
-        featuredImage: "images/restaurants/14-1.jpg"
+        featuredImage: "images/restaurants/SaltTraders-1.png"
     },
     {
         id: 30,
