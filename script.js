@@ -78,11 +78,11 @@ const restaurants = [
         website: "truefoodkitchen.com",
         icon: "fas fa-leaf",
         images: [
-            "images/restaurants/8-1.jpg",
-            "images/restaurants/8-2.jpg",
-            "images/restaurants/8-3.jpg"
+            "images/restaurants/TrueFood-1.png",
+            "images/restaurants/TrueFood-2.png",
+            "images/restaurants/TrueFood-3.png"
         ],
-        featuredImage: "images/restaurants/8-1.jpg"
+        featuredImage: "images/restaurants/TrueFood-1.png"
     },
     {
         id: 5,
@@ -404,11 +404,11 @@ const restaurants = [
         website: "truefoodkitchen.com",
         icon: "fas fa-leaf",
         images: [
-            "images/restaurants/24-1.jpg",
-            "images/restaurants/24-2.jpg",
-            "images/restaurants/24-3.jpg"
+            "images/restaurants/TrueFood-1.png",
+            "images/restaurants/TrueFood-2.png",
+            "images/restaurants/TrueFood-3.png"
         ],
-        featuredImage: "images/restaurants/24-1.jpg"
+        featuredImage: "images/restaurants/TrueFood-1.png"
     },
     {
         id: 25,
