@@ -549,11 +549,11 @@ const restaurants = [
         website: "ilbruttoaustin.com",
         icon: "fas fa-utensils",
         images: [
-            "images/restaurants/34-1.jpg",
-            "images/restaurants/34-2.jpg",
-            "images/restaurants/34-3.jpg"
+            "images/restaurants/il_brutto-1.png",
+            "images/restaurants/il_brutto-2.png",
+            "images/restaurants/il_brutto-3.png"
         ],
-        featuredImage: "images/restaurants/34-1.jpg"
+        featuredImage: "images/restaurants/il_brutto-1.png"
     },
     {
         id: 35,
