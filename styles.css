@@ -786,6 +786,16 @@ body {
     color: #b8d4b8;
 }
 
+.footer-bottom p {
+    margin: 0.5rem 0;
+}
+
+.last-updated {
+    font-size: 0.85rem;
+    color: #8fb88f;
+    font-style: italic;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hamburger {
