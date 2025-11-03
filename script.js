@@ -820,6 +820,16 @@ function renderRestaurants(restaurantsToRender = filteredRestaurants) {
             </div>
         </div>
     `).join('');
+    
+    // Ezoic Dynamic Content: Refresh ads after content changes
+    // Per Ezoic documentation: https://docs.ezoic.com/docs/ezoicads/dynamic-content/
+    // When content changes dynamically, call showAds() to refresh ad placeholders
+    if (typeof ezstandalone !== 'undefined' && ezstandalone.showAds) {
+        ezstandalone.cmd.push(function () {
+            // Refresh all ad placeholders after dynamic content update
+            ezstandalone.showAds();
+        });
+    }
 }
 
 // Helper functions

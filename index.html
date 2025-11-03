@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- Ezoic Privacy Scripts (must load first for GDPR compliance) -->
+    <script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
+    <script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
+    
+    <!-- Ezoic Header Script -->
+    <script async src="https://www.ezojs.com/ezoic/sa.min.js"></script>
+    <script>
+        window.ezstandalone = window.ezstandalone || {};
+        ezstandalone.cmd = ezstandalone.cmd || [];
+    </script>
+    
     <!-- Primary Meta Tags -->
     <title>Austin Gluten Free | 30+ Best Gluten-Free Restaurants in Austin, TX</title>
     <meta name="title" content="Austin Gluten Free | 30+ Best Gluten-Free Restaurants in Austin, TX">
@@ -266,6 +277,17 @@
             </div>
         </section>
 
+        <!-- Ezoic Ad Placement - Top of Content -->
+        <!-- TODO: Replace 101 with your actual Ezoic placement ID from dashboard -->
+        <!-- 
+        <div id="ezoic-pub-ad-placeholder-101"></div>
+        <script>
+            ezstandalone.cmd.push(function () {
+                ezstandalone.showAds(101);
+            });
+        </script>
+        -->
+
         <!-- Restaurants Section -->
         <section id="restaurants" class="restaurants">
             <div class="container">
@@ -273,11 +295,33 @@
                 <p class="section-intro">Explore Austin's best celiac-safe and gluten-free dining options. From dedicated gluten-free bakeries to restaurants with certified GF menus, find your next safe meal in Austin, Texas.</p>
                 <div id="restaurantCount" class="restaurant-count"></div>
                 
+                <!-- Ezoic Ad Placement - Mid-Content (Restaurants Section) -->
+                <!-- TODO: Replace 102 with your actual Ezoic placement ID from dashboard -->
+                <!-- 
+                <div id="ezoic-pub-ad-placeholder-102"></div>
+                <script>
+                    ezstandalone.cmd.push(function () {
+                        ezstandalone.showAds(102);
+                    });
+                </script>
+                -->
+                
                 <div id="restaurantGrid" class="restaurant-grid">
                     <!-- Restaurant cards will be dynamically inserted here -->
                 </div>
             </div>
         </section>
+
+        <!-- Ezoic Ad Placement - After Restaurants Section -->
+        <!-- TODO: Replace 103 with your actual Ezoic placement ID from dashboard -->
+        <!-- 
+        <div id="ezoic-pub-ad-placeholder-103"></div>
+        <script>
+            ezstandalone.cmd.push(function () {
+                ezstandalone.showAds(103);
+            });
+        </script>
+        -->
 
         <!-- About Section -->
         <section id="about" class="about">
@@ -305,6 +349,17 @@
                                 <p>Real reviews and recommendations from the celiac and gluten-free community</p>
                             </div>
                         </div>
+                        
+                        <!-- Ezoic Ad Placement - Mid-Content (About Section) -->
+                        <!-- TODO: Replace 104 with your actual Ezoic placement ID from dashboard -->
+                        <!-- 
+                        <div id="ezoic-pub-ad-placeholder-104"></div>
+                        <script>
+                            ezstandalone.cmd.push(function () {
+                                ezstandalone.showAds(104);
+                            });
+                        </script>
+                        -->
                         
                         <!-- SEO-Rich Content Section -->
                         <article class="seo-content">
@@ -397,5 +452,12 @@
     </footer>
 
     <script src="script.js"></script>
+    
+    <!-- Ezoic Ad Initialization -->
+    <!-- Once you've uncommented and added your placement IDs above, 
+         replace this script with a single showAds() call including all your placement IDs.
+         Example: ezstandalone.cmd.push(function() { ezstandalone.showAds(101, 102, 103, 104); });
+         This reduces server requests and improves loading speed per Ezoic documentation.
+    -->
 </body>
 </html>
