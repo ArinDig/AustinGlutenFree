@@ -197,6 +197,15 @@ body {
     text-shadow: 0 2px 6px rgba(0,0,0,0.7);
 }
 
+.hero-subtext {
+    font-size: 1.05rem;
+    margin-top: -1.5rem;
+    margin-bottom: 2.5rem;
+    max-width: 680px;
+    line-height: 1.8;
+    opacity: 0.9;
+}
+
 .hero-stats {
     display: flex;
     justify-content: center;
@@ -334,11 +343,52 @@ body {
     font-size: 1.1rem;
 }
 
+.section-context {
+    font-size: 1.05rem;
+    color: #495057;
+    max-width: 950px;
+    margin: 0 auto 1.5rem;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.section-context a {
+    color: #2d5016;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.section-context a:hover {
+    text-decoration: underline;
+}
+
 .restaurant-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
+}
+
+.restaurants-tips {
+    margin-top: 3rem;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    line-height: 1.8;
+}
+
+.restaurants-tips h3 {
+    color: #2d5016;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.restaurants-tips p {
+    color: #495057;
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
 }
 
 .restaurant-card {
@@ -848,6 +898,12 @@ body {
         font-size: 2.5rem;
     }
 
+    .hero-subtext {
+        margin-top: -1rem;
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
     .hero-stats {
         gap: 2rem;
     }
@@ -873,6 +929,15 @@ body {
 
     .restaurant-grid {
         grid-template-columns: 1fr;
+    }
+
+    .section-context {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .restaurants-tips {
+        padding: 2rem;
     }
 
     .restaurant-image-gallery {
@@ -935,6 +1000,10 @@ body {
         font-size: 1.8rem;
     }
 
+    .hero-subtext {
+        font-size: 0.95rem;
+    }
+
     .restaurants h2,
     .about h2,
     .contact h2 {
@@ -981,6 +1050,101 @@ body {
     line-height: 1.8;
     color: #495057;
     margin-bottom: 1rem;
+}
+
+/* Guide & About Pages */
+.guide-page .header,
+.about-page .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.guide-content {
+    padding-top: 100px;
+    padding-bottom: 4rem;
+}
+
+.guide-content .seo-content {
+    margin-bottom: 4rem;
+}
+
+.guide-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    color: #2d5016;
+    margin-bottom: 1rem;
+}
+
+.guide-content h2 {
+    font-size: 2rem;
+    color: #2d5016;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.guide-content h3 {
+    font-size: 1.4rem;
+    color: #4a7c59;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.guide-content ul,
+.guide-content ol {
+    color: #495057;
+}
+
+.guide-content li {
+    margin-bottom: 0.6rem;
+}
+
+.about-detail .seo-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.6rem;
+    color: #2d5016;
+    margin-bottom: 1rem;
+}
+
+.about-detail .seo-content h2 {
+    font-size: 2rem;
+    color: #2d5016;
+    margin-top: 2.2rem;
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.about-detail .seo-content p,
+.about-detail .seo-content li {
+    font-size: 1.05rem;
+    color: #495057;
+    line-height: 1.8;
+}
+
+.about-detail .contact-details .contact-item a {
+    color: #2d5016;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.about-detail .contact-details .contact-item a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs {
+    font-size: 0.95rem;
+    color: #6c757d;
+}
+
+.breadcrumbs a {
+    color: #2d5016;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
 }
 
 /* Loading Animation */

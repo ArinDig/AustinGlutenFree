@@ -646,13 +646,19 @@ let filteredRestaurants = [...restaurants];
 
 // Initialize the app
 document.addEventListener('DOMContentLoaded', function() {
-    renderRestaurants();
-    setupEventListeners();
+    if (restaurantGrid && restaurantCount) {
+        renderRestaurants();
+        setupEventListeners();
+    }
     setupMobileMenu();
 });
 
 // Event Listeners
 function setupEventListeners() {
+    if (!searchInput || !searchBtn || !cuisineFilter || !neighborhoodFilter || !priceFilter || !clearFiltersBtn) {
+        return;
+    }
+
     searchInput.addEventListener('input', handleSearch);
     searchBtn.addEventListener('click', handleSearch);
     cuisineFilter.addEventListener('change', handleFilter);
@@ -663,6 +669,10 @@ function setupEventListeners() {
 
 // Mobile Menu
 function setupMobileMenu() {
+    if (!hamburger || !navMenu) {
+        return;
+    }
+
     hamburger.addEventListener('click', function() {
         hamburger.classList.toggle('active');
         navMenu.classList.toggle('active');
@@ -732,6 +742,10 @@ function applyFilters() {
 
 // Clear all filters
 function clearFilters() {
+    if (!searchInput || !cuisineFilter || !neighborhoodFilter || !priceFilter) {
+        return;
+    }
+
     searchInput.value = '';
     cuisineFilter.value = '';
     neighborhoodFilter.value = '';
@@ -742,6 +756,10 @@ function clearFilters() {
 
 // Render restaurants
 function renderRestaurants(restaurantsToRender = filteredRestaurants) {
+    if (!restaurantGrid || !restaurantCount) {
+        return;
+    }
+
     if (restaurantsToRender.length === 0) {
         restaurantGrid.innerHTML = `
             <div class="no-results">
