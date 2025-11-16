@@ -4,6 +4,9 @@ ownerdomain=austinglutenfree.com
 contact=directsales@ezoic.com
 managerdomain=ezoic.ai
 
+# Site owner's Google AdSense account
+google.com, pub-1749871118217579, DIRECT, f08c47fec0942fa0
+
 ezoic.ai, b1244924f570e95b4b727144866104f8, DIRECT
 # 35
 themediagrid.com, Q19AKF, DIRECT, 35d5010d7789b49d
@@ -93,4 +96,3 @@ sharethrough.com, 5926d422, RESELLER, d53b998a7bd4ecd2
 smartadserver.com, 4503-OB, DIRECT, 060d053dcf45cbf3
 smartadserver.com, 4503, DIRECT, 060d053dcf45cbf3
 # 21202
-google.com, pub-1749871118217579, DIRECT, f08c47fec0942fa0
