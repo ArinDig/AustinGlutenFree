@@ -274,24 +274,25 @@ const restaurants = [
         featuredImage: "images/restaurants/22-1.jpg"
     },
     {
-        id: 12,
-        name: "Sweet Ritual",
+        id: 38,
+        name: "Bougie's Donuts & Coffee",
         cuisine: "bakery",
-        neighborhood: "east-austin",
-        price: "$",
-        rating: 4.5,
-        description: "Vegan ice cream shop with many gluten-free options. All ice creams are dairy-free and many are gluten-free as well.",
-        features: ["Vegan Ice Cream", "Dairy-Free", "GF Options"],
-        location: "East Austin",
-        phone: "(512) 555-0134",
-        website: "sweetritual.com",
-        icon: "fas fa-ice-cream",
+        neighborhood: "south-austin",
+        price: "$$",
+        rating: 4.6,
+        description: "Gluten-free donut shop and coffee house in Sunset Valley. Specializes in artisanal gluten-free donuts and premium coffee.",
+        features: ["100% GF", "Donuts", "Coffee", "Celiac Safe"],
+        location: "Sunset Valley (South Austin)",
+        address: "5400 Brodie Ln, Suite 930, Sunset Valley, TX 78745",
+        phone: "(512) 382-1617",
+        website: "bougiesdonuts.com",
+        icon: "fas fa-donut",
         images: [
-            "images/restaurants/12-1.jpg",
-            "images/restaurants/12-2.jpg",
-            "images/restaurants/12-3.jpg"
+            "images/restaurants/38-1.jpg",
+            "images/restaurants/38-2.jpg",
+            "images/restaurants/38-3.jpg"
         ],
-        featuredImage: "images/restaurants/12-1.jpg"
+        featuredImage: "images/restaurants/38-1.jpg"
     },
     {
         id: 13,

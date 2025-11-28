@@ -103,12 +103,6 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://austinglutenfree.com/restaurants/sweet-ritual.html</loc>
-        <lastmod>2025-10-22</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
         <loc>https://austinglutenfree.com/restaurants/bird-bird-biscuit.html</loc>
         <lastmod>2025-10-22</lastmod>
         <changefreq>monthly</changefreq>
@@ -201,6 +195,12 @@
     <url>
         <loc>https://austinglutenfree.com/restaurants/lildoddy-burger-lab.html</loc>
         <lastmod>2025-10-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://austinglutenfree.com/restaurants/bougies-donuts---coffee.html</loc>
+        <lastmod>2025-11-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
