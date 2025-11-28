@@ -295,6 +295,27 @@ const restaurants = [
         featuredImage: "images/restaurants/38-1.jpg"
     },
     {
+        id: 39,
+        name: "Nômadé Cocina",
+        cuisine: "mexican",
+        neighborhood: "south-austin",
+        price: "$$$",
+        rating: 4.7,
+        description: "100% gluten-free restaurant featuring Yucatán-inspired cuisine with Lebanese, Portuguese, and African influences. Award-winning raw bar with ceviches, crudos, and wood-fired specialties.",
+        features: ["100% GF", "Raw Bar", "Cocktails", "Celiac Safe"],
+        location: "South Austin (South 1st)",
+        address: "1506 South 1st Street, Austin, TX 78704",
+        phone: "(512) 520-5440",
+        website: "nomadecocina.com",
+        icon: "fas fa-fish",
+        images: [
+            "images/restaurants/39-1.jpg",
+            "images/restaurants/39-2.jpg",
+            "images/restaurants/39-3.jpg"
+        ],
+        featuredImage: "images/restaurants/39-1.jpg"
+    },
+    {
         id: 13,
         name: "Bird, Bird Biscuit",
         cuisine: "american",
