@@ -288,11 +288,11 @@ const restaurants = [
         website: "bougiesdonuts.com",
         icon: "fas fa-donut",
         images: [
-            "images/restaurants/38-1.jpg",
-            "images/restaurants/38-2.jpg",
-            "images/restaurants/38-3.jpg"
+            "images/restaurants/Bougie-1.png",
+            "images/restaurants/Bougie-2.png",
+            "images/restaurants/Bougie-3.png"
         ],
-        featuredImage: "images/restaurants/38-1.jpg"
+        featuredImage: "images/restaurants/Bougie-1.png"
     },
     {
         id: 39,
@@ -309,11 +309,11 @@ const restaurants = [
         website: "nomadecocina.com",
         icon: "fas fa-fish",
         images: [
-            "images/restaurants/39-1.jpg",
-            "images/restaurants/39-2.jpg",
-            "images/restaurants/39-3.jpg"
+            "images/restaurants/Nomade-1.png",
+            "images/restaurants/Nomade-2.png",
+            "images/restaurants/Nomade-3.png"
         ],
-        featuredImage: "images/restaurants/39-1.jpg"
+        featuredImage: "images/restaurants/Nomade-1.png"
     },
     {
         id: 13,
