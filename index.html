@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Canonical Redirect: Redirect www and HTTP to non-www HTTPS -->
+    <!-- Canonical Redirect: Redirect www, HTTP, index.html, and query parameters to clean URL -->
     <script>
         (function() {
             var host = window.location.hostname;
             var protocol = window.location.protocol;
-            var path = window.location.pathname + window.location.search + window.location.hash;
+            var pathname = window.location.pathname;
+            var search = window.location.search;
+            var hash = window.location.hash;
             var needsRedirect = false;
             var newHost = host;
             var newProtocol = 'https:';
+            var newPathname = pathname;
             
             // Remove www prefix
             if (host.indexOf('www.') === 0) {
@@ -25,9 +28,21 @@
                 needsRedirect = true;
             }
             
+            // Redirect /index.html to root /
+            if (pathname === '/index.html') {
+                newPathname = '/';
+                needsRedirect = true;
+            }
+            
+            // Remove query parameters from homepage (except hash for anchors)
+            if ((pathname === '/' || pathname === '/index.html') && search) {
+                search = '';
+                needsRedirect = true;
+            }
+            
             // Perform redirect if needed
             if (needsRedirect) {
-                window.location.replace(newProtocol + '//' + newHost + path);
+                window.location.replace(newProtocol + '//' + newHost + newPathname + search + hash);
                 return;
             }
         })();

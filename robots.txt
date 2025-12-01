@@ -7,6 +7,9 @@ Allow: /images/
 Allow: /styles.css
 Allow: /script.js
 
+# Prevent indexing of index.html (redirect to root instead)
+Disallow: /index.html
+
 # Sitemap location
 Sitemap: https://austinglutenfree.com/sitemap.xml
 
