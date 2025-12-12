@@ -225,9 +225,9 @@ const restaurants = [
         website: "iamaflowerchild.com",
         icon: "fas fa-spa",
         images: [
-            "images/restaurants/21-1.jpg",
-            "images/restaurants/21-2.jpg",
-            "images/restaurants/21-3.jpg"
+            "images/restaurants/11-1.jpg",
+            "images/restaurants/11-2.jpg",
+            "images/restaurants/11-3.jpg"
         ],
         featuredImage: "images/restaurants/21-1.jpg"
     },
@@ -246,9 +246,9 @@ const restaurants = [
         website: "iamaflowerchild.com",
         icon: "fas fa-spa",
         images: [
-            "images/restaurants/22-1.jpg",
-            "images/restaurants/22-2.jpg",
-            "images/restaurants/22-3.jpg"
+            "images/restaurants/11-1.jpg",
+            "images/restaurants/11-2.jpg",
+            "images/restaurants/11-3.jpg"
         ],
         featuredImage: "images/restaurants/22-1.jpg"
     },
