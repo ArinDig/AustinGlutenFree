@@ -106,28 +106,6 @@ const restaurants = [
         featuredImage: "images/restaurants/Bouldin-1.png"
     },
     {
-        id: 6,
-        name: "Koriente",
-        cuisine: "asian",
-        neighborhood: "downtown",
-        price: "$$",
-        rating: 4.2,
-        description: "Asian fusion restaurant with many gluten-free options. Fresh, healthy bowls and traditional Asian dishes made gluten-free.",
-        features: ["Asian Fusion", "Fresh Bowls", "Healthy Options"],
-        location: "Downtown Austin",
-        address: "621 E 7th St, Austin, TX 78701",
-        phone: "(512) 275-0852",
-        website: "koriente.com",
-        icon: "fas fa-bowl-food",
-        images: [
-            "images/restaurants/Koriente-1.png",
-            "images/restaurants/Koriente-2.png",
-            "images/restaurants/Koriente-3.png",
-            "images/restaurants/Koriente-4.png"
-        ],
-        featuredImage: "images/restaurants/Koriente-1.png"
-    },
-    {
         id: 7,
         name: "The Steeping Room",
         cuisine: "cafe",
@@ -487,10 +465,11 @@ const restaurants = [
         neighborhood: "south-austin",
         price: "$$$",
         rating: 4.6,
-        description: "Restaurant with separate gluten-free menu and staff conscientious about dietary restrictions. Frequently changing menu based on local ingredients.",
-        features: ["GF Menu", "Local Ingredients", "Dietary Conscious"],
-        location: "South Austin",
-        phone: "(512) 555-0149",
+        description: "Award-winning farm-to-table restaurant with exceptional gluten-free accommodations. Seasonal menu changes daily featuring locally-sourced ingredients.",
+        features: ["GF Options", "Farm-to-Table", "Seasonal Menu", "Happy Hour"],
+        location: "South Lamar",
+        address: "1201 S Lamar Blvd, Austin, TX 78704",
+        phone: "(512) 433-6521",
         website: "oddduckaustin.com",
         icon: "fas fa-utensils",
         images: [
