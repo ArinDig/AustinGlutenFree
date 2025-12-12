@@ -379,23 +379,24 @@ const restaurants = [
     },
     {
         id: 31,
-        name: "Zucchini Kill",
+        name: "Zucchini Kill Bakery",
         cuisine: "bakery",
-        neighborhood: "east-austin",
+        neighborhood: "north-austin",
         price: "$$",
-        rating: 4.4,
-        description: "Vegan and gluten-free bakery known for its punk-rock aesthetic and delectable sweets, including perfect vegan Swiss roll cake.",
-        features: ["Vegan & GF", "Punk Rock", "Creative Sweets"],
-        location: "East Austin",
-        phone: "(512) 555-0145",
-        website: "zucchinikill.com",
-        icon: "fas fa-music",
+        rating: 4.8,
+        description: "Allergy-conscious scratch vegan bakery. 100% plant-based sweets including donuts, cakes, cookies, and pastries. Many items are also gluten-free. Punk-rock aesthetic with creative, delectable treats.",
+        features: ["Vegan", "GF Options", "Allergy-Conscious", "Scratch Bakery"],
+        location: "North Austin (Hyde Park)",
+        address: "701 E 53rd St Suite C, Austin, TX 78751",
+        phone: "(512) 522-6360",
+        website: "zucchinibakes.com",
+        icon: "fas fa-cookie-bite",
         images: [
-            "images/restaurants/23-1.jpg",
-            "images/restaurants/23-2.jpg",
-            "images/restaurants/23-3.jpg"
+            "images/restaurants/ZucchiniKill-1.png",
+            "images/restaurants/ZucchiniKill-2.png",
+            "images/restaurants/ZucchiniKill-3.png"
         ],
-        featuredImage: "images/restaurants/23-1.jpg"
+        featuredImage: "images/restaurants/ZucchiniKill-1.png"
     },
     {
         id: 24,
@@ -648,6 +649,132 @@ const restaurants = [
             "images/restaurants/HopDoddy-4.png"
         ],
         featuredImage: "images/restaurants/HopDoddy-1.png"
+    },
+    {
+        id: 40,
+        name: "ATX Cocina",
+        cuisine: "mexican",
+        neighborhood: "downtown",
+        price: "$$$",
+        rating: 4.7,
+        description: "100% gluten-free & seed oil free modern Mexican restaurant. Features nixtamalized heirloom corn masa made in-house from small family farms in Mexico. Inventive dishes with traditional Mexican foundations.",
+        features: ["100% GF", "Seed Oil Free", "Nixtamal Masa", "Celiac Safe"],
+        location: "Downtown Austin (2nd Street District)",
+        address: "110 San Antonio Street Suite 170, Austin, TX 78701",
+        phone: "(512) 263-2322",
+        website: "atxcocina.com",
+        icon: "fas fa-pepper-hot",
+        images: [
+            "images/restaurants/ATXCocina-1.png",
+            "images/restaurants/ATXCocina-2.png",
+            "images/restaurants/ATXCocina-3.png"
+        ],
+        featuredImage: "images/restaurants/ATXCocina-1.png"
+    },
+    {
+        id: 41,
+        name: "Bulevar",
+        cuisine: "mexican",
+        neighborhood: "north-austin",
+        price: "$$$",
+        rating: 4.6,
+        description: "100% gluten-free Mexican kitchen celebrating premium seafood, prime steaks, organic chicken and heirloom vegetables cooked over live coals. Sister restaurant to ATX Cocina.",
+        features: ["100% GF", "Wood-Fired", "Steaks", "Celiac Safe"],
+        location: "North Austin (Arboretum)",
+        address: "9400 Arboretum Blvd, Austin, TX 78759",
+        phone: "(512) 377-9877",
+        website: "bulevaratx.com",
+        icon: "fas fa-fire",
+        images: [
+            "images/restaurants/Bulevar-1.png",
+            "images/restaurants/Bulevar-2.png",
+            "images/restaurants/Bulevar-3.png"
+        ],
+        featuredImage: "images/restaurants/Bulevar-1.png"
+    },
+    {
+        id: 42,
+        name: "The Well - Downtown",
+        cuisine: "american",
+        neighborhood: "downtown",
+        price: "$$$",
+        rating: 4.5,
+        description: "100% gluten-free, dairy-free, soy-free, and refined sugar-free restaurant. Clean ingredients, local sourcing, and authentic flavors. Health-focused dining with no seed oils or GMOs.",
+        features: ["100% GF", "Dairy-Free", "No Seed Oils", "Celiac Safe"],
+        location: "Downtown Austin (2nd Street)",
+        address: "440 W 2nd Street, Austin, TX 78701",
+        phone: "(737) 742-1129",
+        website: "eatwellatx.com",
+        icon: "fas fa-leaf",
+        images: [
+            "images/restaurants/TheWell-1.png",
+            "images/restaurants/TheWell-2.png",
+            "images/restaurants/TheWell-3.png"
+        ],
+        featuredImage: "images/restaurants/TheWell-1.png"
+    },
+    {
+        id: 43,
+        name: "The Well - Westlake",
+        cuisine: "american",
+        neighborhood: "west-austin",
+        price: "$$$",
+        rating: 4.3,
+        description: "100% gluten-free, dairy-free, soy-free, and refined sugar-free restaurant. Clean ingredients, local sourcing, and authentic flavors. Westlake location.",
+        features: ["100% GF", "Dairy-Free", "No Seed Oils", "Celiac Safe"],
+        location: "West Austin (Westlake/Bee Caves)",
+        address: "6317 Bee Caves Road Suite 200, Austin, TX 78746",
+        phone: "(512) 937-0118",
+        website: "eatwellatx.com",
+        icon: "fas fa-leaf",
+        images: [
+            "images/restaurants/TheWell-1.png",
+            "images/restaurants/TheWell-2.png",
+            "images/restaurants/TheWell-3.png"
+        ],
+        featuredImage: "images/restaurants/TheWell-1.png"
+    },
+    {
+        id: 44,
+        name: "The Well - Congress",
+        cuisine: "american",
+        neighborhood: "downtown",
+        price: "$$$",
+        rating: 4.4,
+        description: "100% gluten-free, dairy-free, soy-free, and refined sugar-free restaurant. Clean ingredients, local sourcing, and authentic flavors. Congress Avenue location.",
+        features: ["100% GF", "Dairy-Free", "No Seed Oils", "Celiac Safe"],
+        location: "Downtown Austin (Congress Ave)",
+        address: "501 Brazos St, Austin, TX 78701",
+        phone: "(512) 987-3656",
+        website: "eatwellatx.com",
+        icon: "fas fa-leaf",
+        images: [
+            "images/restaurants/TheWell-1.png",
+            "images/restaurants/TheWell-2.png",
+            "images/restaurants/TheWell-3.png"
+        ],
+        featuredImage: "images/restaurants/TheWell-1.png"
+    },
+    {
+        id: 45,
+        name: "Thai Fresh",
+        cuisine: "asian",
+        neighborhood: "south-austin",
+        price: "$$",
+        rating: 4.2,
+        description: "Authentic Thai cuisine with extensive gluten-free options. Features an in-house gluten-free bakery with sweet treats and desserts. Known for being very celiac-safe with careful preparation.",
+        features: ["GF Bakery", "Thai Cuisine", "Celiac Safe", "Fresh Ingredients"],
+        location: "South Austin (Bouldin)",
+        address: "909 W Mary St, Austin, TX 78704",
+        phone: "(512) 494-6436",
+        website: "thai-fresh.com",
+        icon: "fas fa-bowl-food",
+        images: [
+            "images/restaurants/ThaiFresh-1.png",
+            "images/restaurants/ThaiFresh-2.png",
+            "images/restaurants/ThaiFresh-3.png"
+        ],
+        featuredImage: "images/restaurants/ThaiFresh-1.png"
     }
 ];
 
