@@ -389,7 +389,7 @@ const restaurants = [
         location: "North Austin (Hyde Park)",
         address: "701 E 53rd St Suite C, Austin, TX 78751",
         phone: "(512) 522-6360",
-        website: "zucchinibakes.com",
+        website: "zucchinikill.com",
         icon: "fas fa-cookie-bite",
         images: [
             "images/restaurants/ZucchiniKill-1.png",
