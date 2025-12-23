@@ -755,6 +755,27 @@ const restaurants = [
             "images/restaurants/ThaiFresh-3.png"
         ],
         featuredImage: "images/restaurants/ThaiFresh-1.png"
+    },
+    {
+        id: 46,
+        name: "Thundercloud Subs",
+        cuisine: "american",
+        neighborhood: "austin-wide",
+        price: "$",
+        rating: 4.3,
+        description: "Austin's beloved sub shop since 1975 offering gluten-free bread (Smart Flour) at all 30+ locations. Also features Sub-in-a-Bowl option. Note: Shared kitchen - cross-contamination possible.",
+        features: ["GF Bread", "Sub-in-a-Bowl", "30+ Locations", "⚠️ Shared Kitchen"],
+        location: "Multiple Austin Locations",
+        address: "Various locations across Austin",
+        phone: "(512) 479-8805",
+        website: "thundercloud.com",
+        icon: "fas fa-sandwich",
+        images: [
+            "images/restaurants/Thundercloud-1.png",
+            "images/restaurants/Thundercloud-2.png",
+            "images/restaurants/Thundercloud-3.png"
+        ],
+        featuredImage: "images/restaurants/Thundercloud-1.png"
     }
 ];
 
