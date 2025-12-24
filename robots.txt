@@ -7,8 +7,8 @@ Allow: /images/
 Allow: /styles.css
 Allow: /script.js
 
-# Prevent indexing of index.html (redirect to root instead)
-Disallow: /index.html
+# Note: /index.html redirects to / via JavaScript
+# No need to block - redirect handles it
 
 # Sitemap location
 Sitemap: https://austinglutenfree.com/sitemap.xml
