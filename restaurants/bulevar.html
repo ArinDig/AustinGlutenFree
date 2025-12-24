@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Preconnect for faster resource loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -116,11 +120,11 @@
                 <div class="restaurant-header">
                     <div class="restaurant-images">
                         <div class="image-gallery">
-                            <img src="../images/restaurants/Bulevar-1.png" alt="Bulevar - 100% gluten-free Mexican kitchen in Austin" class="main-image">
+                            <img src="../images/restaurants/Bulevar-1.png" alt="Bulevar - 100% gluten-free Mexican kitchen in Austin" class="main-image" loading="lazy" decoding="async" width="600" height="400">
                             <div class="thumbnail-gallery">
                                 <img src="../images/restaurants/Bulevar-1.png" alt="Bulevar" class="thumbnail active" onclick="changeMainImage(this)">
-                                <img src="../images/restaurants/Bulevar-2.png" alt="Bulevar" class="thumbnail" onclick="changeMainImage(this)">
-                                <img src="../images/restaurants/Bulevar-3.png" alt="Bulevar" class="thumbnail" onclick="changeMainImage(this)">
+                                <img src="../images/restaurants/Bulevar-2.png" alt="Bulevar" class="thumbnail" loading="lazy" decoding="async" onclick="changeMainImage(this)">
+                                <img src="../images/restaurants/Bulevar-3.png" alt="Bulevar" class="thumbnail" loading="lazy" decoding="async" onclick="changeMainImage(this)">
                             </div>
                         </div>
                     </div>

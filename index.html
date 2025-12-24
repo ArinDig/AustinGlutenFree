@@ -106,12 +106,35 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1749871118217579"
      crossorigin="anonymous"></script>
     
-    <!-- Styles -->
-    <link rel="stylesheet" href="styles.css">
+    <!-- Preconnect to external domains for faster loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    
+    <!-- Critical CSS (inline for fastest paint) -->
+    <style>
+        /* Critical above-the-fold styles */
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Inter',system-ui,-apple-system,sans-serif;line-height:1.6;color:#333;background:#f8f9fa}
+        .header{background:linear-gradient(135deg,#2d5016,#4a7c59);position:fixed;top:0;width:100%;z-index:1000}
+        .hero{position:relative;background:linear-gradient(135deg,#2d5016,#4a7c59,#6b8e6b);color:#fff;padding:120px 0 80px;text-align:center;overflow:hidden}
+        .hero-content{position:relative;z-index:2}
+        .hero-content h1{font-family:'Playfair Display',serif;font-size:3.5rem;font-weight:700;margin-bottom:1rem}
+    </style>
+    
+    <!-- Main Styles (non-blocking) -->
+    <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="styles.css"></noscript>
+    
+    <!-- Fonts (display swap for better performance) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+    
+    <!-- Font Awesome (deferred) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
     
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
@@ -225,7 +248,13 @@
         <nav class="navbar">
             <div class="nav-container">
                 <div class="nav-logo">
-                    <img src="images/logos/logo.png" alt="Austin Gluten Free" class="nav-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <img src="images/logos/logo.png" 
+                         alt="Austin Gluten Free" 
+                         class="nav-logo-img" 
+                         width="40" 
+                         height="40"
+                         fetchpriority="high"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     <div class="nav-logo-fallback" style="display: none;">
                         <i class="fas fa-leaf"></i>
                         <span>Austin Gluten Free</span>
@@ -252,8 +281,14 @@
         <!-- Hero Section -->
         <section id="home" class="hero">
             <div class="hero-background">
-                <!-- Background image from austinglutenfree.com -->
-                <img src="images/hero-background.jpg" alt="Austin gluten-free dining" class="hero-bg-image">
+                <!-- Hero image - prioritized for LCP (Largest Contentful Paint) -->
+                <img src="images/hero-background.jpg" 
+                     alt="Austin gluten-free dining scene with delicious food" 
+                     class="hero-bg-image"
+                     fetchpriority="high"
+                     decoding="async"
+                     width="1920"
+                     height="1080">
                 <div class="hero-overlay"></div>
             </div>
             <div class="hero-content">
@@ -517,7 +552,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     
     <!-- Ezoic Ad Initialization -->
     <!-- Once you've uncommented and added your placement IDs above, 
