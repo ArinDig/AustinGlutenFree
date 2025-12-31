@@ -537,12 +537,13 @@ const restaurants = [
         website: "hopdoddy.com",
         icon: "fas fa-hamburger",
         images: [
-            "images/restaurants/HopDoddy-1.png",
-            "images/restaurants/HopDoddy-2.png",
-            "images/restaurants/HopDoddy-3.png",
-            "images/restaurants/HopDoddy-4.png"
+            "images/restaurants/HopDoddy_LilDoddy_GF-Bun-1.png",
+            "images/restaurants/HopDoddy_LilDoddy_GF-Bun-2.png",
+            "images/restaurants/HopDoddy_LilDoddy_GF-Bun-3.png",
+            "images/restaurants/HopDoddy_LilDoddy_Bowl-4.png",
+            "images/restaurants/HopDoddy_LilDoddy_Brussels-5.png"
         ],
-        featuredImage: "images/restaurants/HopDoddy-1.png"
+        featuredImage: "images/restaurants/HopDoddy_LilDoddy_GF-Bun-1.png"
     },
     {
         id: 34,
@@ -623,12 +624,13 @@ const restaurants = [
         website: "hopdoddy.com",
         icon: "fas fa-hamburger",
         images: [
-            "images/restaurants/HopDoddy-1.png",
-            "images/restaurants/HopDoddy-2.png",
-            "images/restaurants/HopDoddy-3.png",
-            "images/restaurants/HopDoddy-4.png"
+            "images/restaurants/HopDoddy_LilDoddy_GF-Bun-1.png",
+            "images/restaurants/HopDoddy_LilDoddy_GF-Bun-2.png",
+            "images/restaurants/HopDoddy_LilDoddy_GF-Bun-3.png",
+            "images/restaurants/HopDoddy_LilDoddy_Bowl-4.png",
+            "images/restaurants/HopDoddy_LilDoddy_Brussels-5.png"
         ],
-        featuredImage: "images/restaurants/HopDoddy-1.png"
+        featuredImage: "images/restaurants/HopDoddy_LilDoddy_GF-Bun-1.png"
     },
     {
         id: 40,
