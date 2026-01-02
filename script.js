@@ -794,11 +794,12 @@ const restaurants = [
         website: "pinthouse.com",
         icon: "fas fa-pizza-slice",
         images: [
-            "images/restaurants/47-1.jpg",
-            "images/restaurants/47-2.jpg",
-            "images/restaurants/47-3.jpg"
+            "images/restaurants/Pinthouse-1.png",
+            "images/restaurants/Pinthouse-2.png",
+            "images/restaurants/Pinthouse-3.png",
+            "images/restaurants/Pinthouse-4.png"
         ],
-        featuredImage: "images/restaurants/47-1.jpg"
+        featuredImage: "images/restaurants/Pinthouse-1.png"
     },
     {
         id: 48,
@@ -815,11 +816,12 @@ const restaurants = [
         website: "pinthouse.com",
         icon: "fas fa-pizza-slice",
         images: [
-            "images/restaurants/48-1.jpg",
-            "images/restaurants/48-2.jpg",
-            "images/restaurants/48-3.jpg"
+            "images/restaurants/Pinthouse-1.png",
+            "images/restaurants/Pinthouse-2.png",
+            "images/restaurants/Pinthouse-3.png",
+            "images/restaurants/Pinthouse-4.png"
         ],
-        featuredImage: "images/restaurants/48-1.jpg"
+        featuredImage: "images/restaurants/Pinthouse-1.png"
     },
     {
         id: 49,
@@ -836,11 +838,12 @@ const restaurants = [
         website: "pinthouse.com",
         icon: "fas fa-pizza-slice",
         images: [
-            "images/restaurants/49-1.jpg",
-            "images/restaurants/49-2.jpg",
-            "images/restaurants/49-3.jpg"
+            "images/restaurants/Pinthouse-1.png",
+            "images/restaurants/Pinthouse-2.png",
+            "images/restaurants/Pinthouse-3.png",
+            "images/restaurants/Pinthouse-4.png"
         ],
-        featuredImage: "images/restaurants/49-1.jpg"
+        featuredImage: "images/restaurants/Pinthouse-1.png"
     }
 ];
 
