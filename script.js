@@ -778,6 +778,69 @@ const restaurants = [
             "images/restaurants/Thundercloud-3.png"
         ],
         featuredImage: "images/restaurants/Thundercloud-1.png"
+    },
+    {
+        id: 47,
+        name: "Pinthouse Pizza - Burnet Road",
+        cuisine: "italian",
+        neighborhood: "north-austin",
+        price: "$$",
+        rating: 4.5,
+        description: "Austin's beloved craft beer and pizza spot offers a well-reviewed ancient grain gluten-free crust made with sorghum, amaranth, and teff. Pair with award-winning house-brewed beers. Burnet Road location.",
+        features: ["GF Crust", "Craft Beer", "Vegan Options", "⚠️ Shared Kitchen"],
+        location: "North Austin (Burnet Road)",
+        address: "4729 Burnet Rd, Austin, TX 78756",
+        phone: "(512) 436-9605",
+        website: "pinthouse.com",
+        icon: "fas fa-pizza-slice",
+        images: [
+            "images/restaurants/47-1.jpg",
+            "images/restaurants/47-2.jpg",
+            "images/restaurants/47-3.jpg"
+        ],
+        featuredImage: "images/restaurants/47-1.jpg"
+    },
+    {
+        id: 48,
+        name: "Pinthouse Pizza - South Lamar",
+        cuisine: "italian",
+        neighborhood: "south-austin",
+        price: "$$",
+        rating: 4.5,
+        description: "Austin's beloved craft beer and pizza spot offers a well-reviewed ancient grain gluten-free crust made with sorghum, amaranth, and teff. Pair with award-winning house-brewed beers. South Lamar location.",
+        features: ["GF Crust", "Craft Beer", "Vegan Options", "⚠️ Shared Kitchen"],
+        location: "South Austin (South Lamar)",
+        address: "4236 S Lamar Blvd, Austin, TX 78704",
+        phone: "(512) 522-2337",
+        website: "pinthouse.com",
+        icon: "fas fa-pizza-slice",
+        images: [
+            "images/restaurants/48-1.jpg",
+            "images/restaurants/48-2.jpg",
+            "images/restaurants/48-3.jpg"
+        ],
+        featuredImage: "images/restaurants/48-1.jpg"
+    },
+    {
+        id: 49,
+        name: "Pinthouse Pizza - Round Rock",
+        cuisine: "italian",
+        neighborhood: "round-rock",
+        price: "$$",
+        rating: 4.5,
+        description: "Austin's beloved craft beer and pizza spot offers a well-reviewed ancient grain gluten-free crust made with sorghum, amaranth, and teff. Pair with award-winning house-brewed beers. Round Rock location.",
+        features: ["GF Crust", "Craft Beer", "Vegan Options", "⚠️ Shared Kitchen"],
+        location: "Round Rock",
+        address: "2800 Hoppe Trail, Round Rock, TX 78681",
+        phone: "(512) 598-0600",
+        website: "pinthouse.com",
+        icon: "fas fa-pizza-slice",
+        images: [
+            "images/restaurants/49-1.jpg",
+            "images/restaurants/49-2.jpg",
+            "images/restaurants/49-3.jpg"
+        ],
+        featuredImage: "images/restaurants/49-1.jpg"
     }
 ];
 
