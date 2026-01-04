@@ -99,6 +99,33 @@
     </script>
 
     <style>
+        /* Fixed sidebar ads on screen edges */
+        .sidebar-ad-left {
+            position: fixed !important;
+            left: 10px !important;
+            top: 120px !important;
+            width: 160px !important;
+            max-width: 160px !important;
+            z-index: 100;
+            float: none !important;
+            margin: 0 !important;
+        }
+        .sidebar-ad-right {
+            position: fixed !important;
+            right: 10px !important;
+            top: 120px !important;
+            width: 160px !important;
+            max-width: 160px !important;
+            z-index: 100;
+            float: none !important;
+            margin: 0 !important;
+        }
+        /* Hide sidebar ads on smaller screens */
+        @media (max-width: 1400px) {
+            .sidebar-ad-left, .sidebar-ad-right {
+                display: none !important;
+            }
+        }
         .faq-section {
             margin-bottom: 3rem;
         }
@@ -213,9 +240,9 @@
                     </ul>
                 </div>
 
-                <!-- Ezoic Sidebar Ads (Left & Right) -->
-                <div id="ezoic-pub-ad-placeholder-109" class="ezoic-ad" style="float: left; margin: 0 1.5rem 1.5rem 0; max-width: 160px;"></div>
-                <div id="ezoic-pub-ad-placeholder-106" class="ezoic-ad" style="float: right; margin: 0 0 1.5rem 1.5rem; max-width: 160px;"></div>
+                <!-- Ezoic Sidebar Ads (Fixed to Screen Edges) -->
+                <div id="ezoic-pub-ad-placeholder-109" class="ezoic-ad sidebar-ad-left"></div>
+                <div id="ezoic-pub-ad-placeholder-106" class="ezoic-ad sidebar-ad-right"></div>
                 <script>
                     ezstandalone.cmd.push(function() {
                         ezstandalone.showAds(109, 106);
