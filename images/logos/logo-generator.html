@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGF Logo Generator</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            background: #f0f0f0;
+            font-family: 'Inter', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+        
+        .logo-container {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        
+        .logo {
+            width: 400px;
+            height: 400px;
+            background: #4a6741;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .leaf {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .leaf svg {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .agf-text {
+            font-size: 100px;
+            font-weight: 700;
+            color: white;
+            letter-spacing: -3px;
+            margin: 0;
+            line-height: 1;
+        }
+        
+        .austin-text {
+            font-size: 24px;
+            font-weight: 400;
+            color: #b8d4b8;
+            letter-spacing: 4px;
+            margin: 10px 0 0 0;
+        }
+        
+        .instructions {
+            max-width: 600px;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        
+        .instructions h2 {
+            margin-top: 0;
+            color: #4a6741;
+        }
+        
+        .instructions ol {
+            line-height: 1.8;
+        }
+        
+        .instructions code {
+            background: #f0f0f0;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 14px;
+        }
+        
+        button {
+            background: #4a6741;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        button:hover {
+            background: #3a5631;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <div class="logo" id="logo">
+            <div class="leaf">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Simple, recognizable leaf shape -->
+                    <path d="M 50 10 Q 70 20, 75 40 Q 78 55, 70 70 Q 60 85, 50 90 Q 40 85, 30 70 Q 22 55, 25 40 Q 30 20, 50 10 Z" 
+                          fill="#90ee90" 
+                          stroke="none"/>
+                    <!-- Leaf vein/stem -->
+                    <path d="M 50 90 L 50 10" 
+                          stroke="#4a6741" 
+                          stroke-width="3" 
+                          fill="none"
+                          stroke-linecap="round"/>
+                    <!-- Side veins -->
+                    <path d="M 50 35 Q 60 38, 65 45" 
+                          stroke="#4a6741" 
+                          stroke-width="2" 
+                          fill="none"
+                          stroke-linecap="round"/>
+                    <path d="M 50 35 Q 40 38, 35 45" 
+                          stroke="#4a6741" 
+                          stroke-width="2" 
+                          fill="none"
+                          stroke-linecap="round"/>
+                    <path d="M 50 55 Q 60 58, 65 65" 
+                          stroke="#4a6741" 
+                          stroke-width="2" 
+                          fill="none"
+                          stroke-linecap="round"/>
+                    <path d="M 50 55 Q 40 58, 35 65" 
+                          stroke="#4a6741" 
+                          stroke-width="2" 
+                          fill="none"
+                          stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="agf-text">AGF</div>
+            <div class="austin-text">AUSTIN</div>
+        </div>
+    </div>
+    
+    <button onclick="downloadLogo()">Download Logo as PNG</button>
+    
+    <div class="instructions">
+        <h2>How to Use This Logo</h2>
+        <ol>
+            <li>Click the <strong>"Download Logo as PNG"</strong> button above to save the logo</li>
+            <li>Or, take a screenshot:
+                <ul>
+                    <li><strong>Mac:</strong> Press <code>Cmd + Shift + 4</code>, then drag to select the circular logo</li>
+                    <li><strong>Windows:</strong> Press <code>Win + Shift + S</code>, then select the area</li>
+                </ul>
+            </li>
+            <li>Go back to your Facebook Page</li>
+            <li>Click the camera icon on your profile picture</li>
+            <li>Upload the logo image</li>
+        </ol>
+        
+        <p><strong>Note:</strong> Facebook will automatically crop this to a circle for your profile picture!</p>
+    </div>
+    
+    <script>
+        function downloadLogo() {
+            // Create a canvas
+            const logo = document.getElementById('logo');
+            const canvas = document.createElement('canvas');
+            canvas.width = 800;
+            canvas.height = 800;
+            const ctx = canvas.getContext('2d');
+            
+            // Fill background circle
+            ctx.fillStyle = '#4a6741';
+            ctx.beginPath();
+            ctx.arc(400, 400, 400, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // Draw leaf - simple, recognizable shape
+            ctx.fillStyle = '#90ee90';
+            ctx.beginPath();
+            ctx.moveTo(400, 180); // top point
+            ctx.quadraticCurveTo(450, 200, 460, 250); // right side
+            ctx.quadraticCurveTo(465, 290, 450, 330);
+            ctx.quadraticCurveTo(430, 365, 400, 380); // bottom point
+            ctx.quadraticCurveTo(370, 365, 350, 330); // left side
+            ctx.quadraticCurveTo(335, 290, 340, 250);
+            ctx.quadraticCurveTo(350, 200, 400, 180);
+            ctx.closePath();
+            ctx.fill();
+            
+            // Draw center vein
+            ctx.strokeStyle = '#4a6741';
+            ctx.lineWidth = 6;
+            ctx.lineCap = 'round';
+            ctx.beginPath();
+            ctx.moveTo(400, 380);
+            ctx.lineTo(400, 180);
+            ctx.stroke();
+            
+            // Draw side veins
+            ctx.lineWidth = 4;
+            // Upper right
+            ctx.beginPath();
+            ctx.moveTo(400, 230);
+            ctx.quadraticCurveTo(420, 235, 435, 250);
+            ctx.stroke();
+            // Upper left
+            ctx.beginPath();
+            ctx.moveTo(400, 230);
+            ctx.quadraticCurveTo(380, 235, 365, 250);
+            ctx.stroke();
+            // Lower right
+            ctx.beginPath();
+            ctx.moveTo(400, 290);
+            ctx.quadraticCurveTo(420, 300, 435, 320);
+            ctx.stroke();
+            // Lower left
+            ctx.beginPath();
+            ctx.moveTo(400, 290);
+            ctx.quadraticCurveTo(380, 300, 365, 320);
+            ctx.stroke();
+            
+            // Draw AGF text
+            ctx.fillStyle = '#ffffff';
+            ctx.font = 'bold 200px Inter, Arial, sans-serif';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText('AGF', 400, 520);
+            
+            // Draw AUSTIN text
+            ctx.fillStyle = '#b8d4b8';
+            ctx.font = '400 48px Inter, Arial, sans-serif';
+            ctx.letterSpacing = '8px';
+            ctx.fillText('AUSTIN', 400, 600);
+            
+            // Download
+            canvas.toBlob(function(blob) {
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'austin-gluten-free-logo.png';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+            });
+        }
+    </script>
+</body>
+</html>
