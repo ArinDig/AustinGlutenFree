@@ -4,10 +4,11 @@ ownerdomain=austinglutenfree.com
 contact=directsales@ezoic.com
 managerdomain=ezoic.ai
 
+# Ezoic Primary Entry
+ezoic.ai, b1244924f570e95b4b727144866104f8, DIRECT
+
 # Site owner's Google AdSense account
 google.com, pub-1749871118217579, DIRECT, f08c47fec0942fa0
-
-ezoic.ai, b1244924f570e95b4b727144866104f8, DIRECT
 
 # Ezoic Required Entries (Added Dec 2025)
 triplelift.com, 12465, RESELLER, 6c33edb13117fd86
