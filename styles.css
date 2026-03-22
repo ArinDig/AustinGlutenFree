@@ -890,6 +890,16 @@ body {
     margin: 0.5rem 0;
 }
 
+.footer-bottom a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: #b8d4b8;
+}
+
 .last-updated {
     font-size: 0.85rem;
     color: #8fb88f;
