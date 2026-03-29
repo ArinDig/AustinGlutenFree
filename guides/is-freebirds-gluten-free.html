@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Ezoic Privacy Script -->
+
+    <!-- Ezoic Privacy Scripts -->
+    <script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
+    <script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
+
+    <!-- Ezoic Header Script -->
+    <script async src="https://www.ezojs.com/ezoic/sa.min.js"></script>
     <script>
         window.ezstandalone = window.ezstandalone || {};
         ezstandalone.cmd = ezstandalone.cmd || [];
-        window.ezPrivacySettings = {
-            iabVersion: 'tcfv2',
-            privacyPolicyUrl: 'https://austinglutenfree.com/privacy-policy.html'
-        };
     </script>
-    
-    <!-- Ezoic Header Script -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NYNHWVJ39L"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C0CQSR91PD"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-NYNHWVJ39L');
+      gtag('config', 'G-C0CQSR91PD');
     </script>
-    <script async src="//www.ezoic.net/ezoic/ezoicbwa.js"></script>
     
     <title>Is Freebirds Gluten Free? 2026 Guide — GF Bowls, Corn Tortillas & Cross-Contamination Risks</title>
     <meta name="title" content="Is Freebirds Gluten Free? Complete GF Menu Guide for Austin">
@@ -44,8 +44,12 @@
     <meta property="twitter:description" content="Complete guide to gluten-free options at Freebirds World Burrito in Austin.">
     <meta property="twitter:image" content="https://austinglutenfree.com/images/og-default.jpg">
     
+    <link rel="icon" type="image/x-icon" href="https://austinglutenfree.com/images/logos/logo.png">
     <link rel="stylesheet" href="../styles.css">
-    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <!-- Schema.org FAQPage Markup -->
     <script type="application/ld+json">
@@ -80,35 +84,156 @@
       ]
     }
     </script>
+
+    <style>
+        .guide-hero {
+            background: linear-gradient(135deg, #2d5016 0%, #4a7c59 50%, #8b4513 100%);
+            color: white;
+            padding: 100px 20px 60px;
+            text-align: center;
+        }
+        .guide-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .guide-hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.95;
+        }
+        .guide-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 20px;
+        }
+        .guide-content h2 {
+            color: #2d5016;
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid #4a7c59;
+            padding-bottom: 0.5rem;
+        }
+        .guide-content h3 {
+            color: #4a7c59;
+            font-size: 1.4rem;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+        .guide-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 1.25rem;
+        }
+        .guide-content ul, .guide-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+        .guide-content li {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin-bottom: 0.75rem;
+        }
+        .guide-content strong { color: #2d5016; font-weight: 600; }
+        .warning-box, .info-box.info-warning {
+            background: #fff4e6;
+            border-left: 5px solid #f4a460;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+        .warning-box h3, .info-box.info-warning h3 { color: #8b4513; margin-top: 0; }
+        .safe-box, .info-box.info-success {
+            background: #f0f8f0;
+            border-left: 5px solid #4a7c59;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+        .safe-box h3, .info-box.info-success h3 { color: #2d5016; margin-top: 0; }
+        .faq-item {
+            background: #f9f9f9;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-left: 4px solid #4a7c59;
+        }
+        .faq-item h3 { color: #2d5016; margin-top: 0; font-size: 1.2rem; }
+        .comparison-grid, .tips-grid, .restaurant-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .comparison-card, .tip-card, .restaurant-card {
+            background: #f9f9f9;
+            border-radius: 10px;
+            padding: 1.5rem;
+            border: 1px solid #ddd;
+        }
+        .comparison-card h3, .tip-card h3, .restaurant-card h3 {
+            color: #2d5016;
+            margin-top: 0;
+            font-size: 1.1rem;
+        }
+        .guide-links { list-style: none; padding: 0; }
+        .guide-links li { margin-bottom: 0.75rem; }
+        .guide-links a { color: #4a7c59; font-weight: 500; text-decoration: none; }
+        .guide-links a:hover { text-decoration: underline; }
+        .breadcrumb { font-size: 0.9rem; color: #888; margin-bottom: 2rem; }
+        .breadcrumb a { color: #4a7c59; text-decoration: none; }
+    </style>
 </head>
-<body>
+<body class="guide-page">
     <header class="header">
-        <div class="container">
-            <nav>
-                <a href="../index.html" class="logo">🌾 Austin Gluten Free</a>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="../">
+                        <h1>🌾 Austin Gluten Free</h1>
+                    </a>
+                </div>
                 <ul class="nav-menu">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../index.html#restaurants">Restaurants</a></li>
-                    <li><a href="../guides/gluten-free-austin-guide.html">Guide</a></li>
-                    <li><a href="../guides/gluten-free-faq.html">FAQ</a></li>
-                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../" class="nav-link">Home</a></li>
+                    <li><a href="../#restaurants" class="nav-link">Restaurants</a></li>
+                    <li><a href="gluten-free-austin-guide.html" class="nav-link">Guide</a></li>
+                    <li><a href="gluten-free-faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="../#contact" class="nav-link">Contact</a></li>
                 </ul>
-            </nav>
-        </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <section class="guide-hero">
-        <div class="container">
-            <h1>Is Freebirds Gluten Free? 🌯</h1>
-            <p class="lead">Complete guide to gluten-free options at Freebirds World Burrito in Austin</p>
-        </div>
-    </section>
+    <main>
+        <section class="guide-hero">
+            <h1>🌯 Is Freebirds Gluten Free?</h1>
+            <p>Complete guide to gluten-free options at Freebirds World Burrito in Austin</p>
+        </section>
 
-    <div class="container">
-        <article class="guide-content">
-            
-            <!-- Ad Placeholder 1 -->
-            <div id="ezoic-pub-ad-placeholder-106" style="margin: 20px 0;"></div>
+        <!-- Left Sidebar Ad -->
+        <div class="sidebar-ad-left">
+            <div id="ezoic-pub-ad-placeholder-106"></div>
+        </div>
+
+        <!-- Right Sidebar Ad -->
+        <div class="sidebar-ad-right">
+            <div id="ezoic-pub-ad-placeholder-109"></div>
+        </div>
+
+        <div class="guide-content">
+            <nav class="breadcrumb">
+                <a href="../">Home</a> &gt; <a href="gluten-free-austin-guide.html">Guides</a> &gt; Is Freebirds Gluten Free?
+            </nav>
             
             <section class="content-section">
                 <h2>Quick Answer: Is Freebirds Gluten Free?</h2>
@@ -160,8 +285,10 @@
                 </ul>
             </section>
 
-            <!-- Ad Placeholder 2 -->
-            <div id="ezoic-pub-ad-placeholder-109" style="margin: 20px 0;"></div>
+            <!-- Mid Ad -->
+            <div style="margin: 3rem auto; text-align: center;">
+                <div id="ezoic-pub-ad-placeholder-109" style="display:none;"></div>
+            </div>
 
             <section class="content-section">
                 <h2>⚠️ Cross-Contamination Risks</h2>
@@ -214,8 +341,10 @@
                 <p><em>Always call ahead to confirm current gluten-free options and discuss your specific dietary needs with the staff.</em></p>
             </section>
 
-            <!-- Ad Placeholder 3 -->
-            <div id="ezoic-pub-ad-placeholder-114" style="margin: 20px 0;"></div>
+            <!-- Bottom Ad -->
+            <div style="margin: 3rem auto; text-align: center;">
+                <div id="ezoic-pub-ad-placeholder-114"></div>
+            </div>
 
             <section class="content-section">
                 <h2>🆚 Freebirds vs. Other Mexican Chains</h2>
@@ -380,43 +509,41 @@
                 </ul>
             </section>
 
-        </article>
-    </div>
+        </div>
+    </main>
 
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>About Austin Gluten Free</h3>
-                    <p>Your trusted guide to celiac-safe and gluten-free dining in Austin, Texas. We personally verify each restaurant's gluten-free protocols.</p>
+                    <h3>Austin Gluten Free</h3>
+                    <p>Your trusted guide to gluten-free dining in Austin, Texas.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-yelp"></i></a>
+                    </div>
                 </div>
                 <div class="footer-section">
-                    <h3>Quick Links</h3>
+                    <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../index.html#restaurants">Restaurants</a></li>
-                        <li><a href="../guides/gluten-free-austin-guide.html">Ultimate Guide</a></li>
-                        <li><a href="../guides/gluten-free-faq.html">FAQ</a></li>
-                        <li><a href="../contact.html">Contact</a></li>
-                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../">Home</a></li>
+                        <li><a href="../#restaurants">Restaurants</a></li>
+                        <li><a href="gluten-free-austin-guide.html">Guide</a></li>
+                        <li><a href="gluten-free-faq.html">FAQ</a></li>
+                        <li><a href="../#contact">Contact</a></li>
                         <li><a href="../privacy-policy.html">Privacy Policy</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h3>GF Guides</h3>
+                    <h4>Popular Guides</h4>
                     <ul>
-                        <li><a href="../guides/gluten-free-pizza-austin.html">GF Pizza</a></li>
-                        <li><a href="../guides/gluten-free-mexican-food-austin.html">GF Mexican</a></li>
-                        <li><a href="../guides/gluten-free-italian-food-austin.html">GF Italian</a></li>
-                        <li><a href="../guides/gluten-free-bbq-austin.html">GF BBQ</a></li>
-                        <li><a href="../guides/gluten-free-breakfast-austin.html">GF Breakfast</a></li>
-                        <li><a href="../guides/gluten-free-date-night-austin.html">GF Date Night</a></li>
+                        <li><a href="gluten-free-austin-guide.html">Ultimate GF Austin Guide</a></li>
+                        <li><a href="gluten-free-mexican-food-austin.html">GF Mexican Food</a></li>
+                        <li><a href="gluten-free-pizza-austin.html">Best GF Pizza</a></li>
+                        <li><a href="gluten-free-breakfast-austin.html">GF Breakfast</a></li>
                     </ul>
-                    <h3 style="margin-top: 20px;">Connect</h3>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/austinglutenfree/" target="_blank" rel="noopener">Instagram</a>
-                        <a href="https://twitter.com/atxglutenfree" target="_blank" rel="noopener">Twitter</a>
-                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -425,14 +552,15 @@
         </div>
     </footer>
 
-    <!-- Ezoic Ad Activation -->
     <script>
-        ezstandalone.cmd.push(function() {
+        if (window.ezstandalone && typeof window.ezstandalone.define !== 'undefined') {
             ezstandalone.define(106, 109, 114);
             ezstandalone.enable();
             ezstandalone.display();
-        });
-        ezstandalone.showAds = true;
+        }
+        if (typeof window.ezstandalone !== 'undefined' && typeof window.ezstandalone.showAds === 'function') {
+            window.ezstandalone.showAds();
+        }
     </script>
 </body>
 </html>
