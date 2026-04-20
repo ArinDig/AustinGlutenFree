@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gluten-Free Guides for Austin, TX | Austin Gluten Free</title>
+    <meta name="description" content="Comprehensive gluten-free guides for Austin, Texas. Neighborhood dining guides, restaurant-specific GF breakdowns, cuisine guides, and tips for eating gluten-free in Austin.">
+    <meta name="keywords" content="gluten free Austin guide, Austin gluten free restaurants, celiac Austin, gluten free dining Austin Texas, is X gluten free Austin">
+    <link rel="canonical" href="https://austinglutenfree.com/guides/">
+    <link rel="icon" type="image/x-icon" href="https://austinglutenfree.com/images/logos/logo.png">
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Gluten-Free Guides for Austin, TX",
+      "description": "Comprehensive guides for gluten-free dining in Austin, Texas.",
+      "url": "https://austinglutenfree.com/guides/",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Austin Gluten Free",
+        "url": "https://austinglutenfree.com"
+      }
+    }
+    </script>
+    <style>
+        .guides-hero {
+            background: linear-gradient(135deg, #2d5016, #4a7c59);
+            color: white;
+            padding: 4rem 0 3rem;
+            text-align: center;
+        }
+        .guides-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .guides-hero p {
+            font-size: 1.15rem;
+            opacity: 0.9;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        .guides-section {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+        .guides-category {
+            margin-bottom: 3.5rem;
+        }
+        .guides-category h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: #2d5016;
+            border-bottom: 2px solid #90ee90;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .guides-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.25rem;
+        }
+        .guide-card {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            padding: 1.25rem 1.5rem;
+            text-decoration: none;
+            color: inherit;
+            transition: box-shadow 0.2s, border-color 0.2s;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+        .guide-card:hover {
+            box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+            border-color: #4a7c59;
+        }
+        .guide-card-icon {
+            font-size: 1.5rem;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        .guide-card h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin: 0 0 0.35rem;
+            line-height: 1.4;
+        }
+        .guide-card p {
+            font-size: 0.88rem;
+            color: #6b7280;
+            margin: 0;
+            line-height: 1.5;
+        }
+        .guide-card .read-link {
+            font-size: 0.85rem;
+            color: #4a7c59;
+            font-weight: 600;
+            margin-top: 0.5rem;
+            display: block;
+        }
+        .guides-cta {
+            background: #f0f7f0;
+            border-radius: 12px;
+            padding: 2.5rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .guides-cta h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            color: #2d5016;
+            margin-bottom: 0.75rem;
+        }
+        .guides-cta p {
+            color: #4b5563;
+            margin-bottom: 1.25rem;
+        }
+        .btn-primary {
+            background: #4a7c59;
+            color: white;
+            padding: 0.75rem 1.75rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+        }
+        .btn-primary:hover {
+            background: #2d5016;
+        }
+        @media (max-width: 640px) {
+            .guides-hero h1 { font-size: 2rem; }
+            .guides-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="../" style="display:flex;align-items:center;gap:0.75rem;text-decoration:none;">
+                        <img src="../images/logos/agf-logo.svg" alt="Austin Gluten Free" width="36" height="36" style="border-radius:50%;">
+                        <span style="font-family:'Playfair Display',serif;font-weight:700;color:white;font-size:1.3rem;">Austin Gluten Free</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../" class="nav-link">Home</a></li>
+                    <li><a href="../#restaurants" class="nav-link">Restaurants</a></li>
+                    <li><a href="index.html" class="nav-link active">Guides</a></li>
+                    <li><a href="gluten-free-faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="../#about" class="nav-link">About</a></li>
+                    <li><a href="../#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="guides-hero">
+            <div>
+                <h1>Gluten-Free Guides for Austin</h1>
+                <p>Neighborhood dining guides, restaurant breakdowns, cuisine-by-cuisine tips, and everything else you need to eat safely in Austin.</p>
+            </div>
+        </section>
+
+        <div class="guides-section">
+
+            <!-- Neighborhood Guides -->
+            <div class="guides-category">
+                <h2>🗺️ Neighborhood Dining Guides</h2>
+                <div class="guides-grid">
+                    <a href="gluten-free-austin-guide.html" class="guide-card">
+                        <div class="guide-card-icon">🌟</div>
+                        <div>
+                            <h3>The Complete Gluten-Free Guide to Austin</h3>
+                            <p>The full overview — neighborhoods, itineraries, bakery crawls, and pro tips for navigating Austin's GF scene.</p>
+                            <span class="read-link">Read Guide →</span>
+                        </div>
+                    </a>
+                    <a href="gluten-free-downtown-austin.html" class="guide-card">
+                        <div class="guide-card-icon">🏙️</div>
+                        <div>
+                            <h3>Downtown Austin Gluten-Free Dining</h3>
+                            <p>The best GF restaurants in Downtown Austin, from the 2nd Street District to Congress Ave.</p>
+                            <span class="read-link">Read Guide →</span>
+                        </div>
+                    </a>
+                    <a href="gluten-free-south-lamar-austin.html" class="guide-card">
+                        <div class="guide-card-icon">🎸</div>
+                        <div>
+                            <h3>South Lamar Gluten-Free Guide</h3>
+                            <p>South Lamar's best celiac-safe and GF-friendly spots, from brunch to late night.</p>
+                            <span class="read-link">Read Guide →</span>
+                        </div>
+                    </a>
+                    <a href="gluten-free-east-austin.html" class="guide-card">
+                        <div class="guide-card-icon">🌿</div>
+                        <div>
+                            <h3>East Austin Gluten-Free Dining</h3>
+                            <p>East Austin's creative food scene has plenty of GF-friendly options — here's where to go.</p>
+                            <span class="read-link">Read Guide →</span>
+                        </div>
+                    </a>
+                    <a href="gluten-free-domain-north-austin.html" class="guide-card">
+                        <div class="guide-card-icon">🛍️</div>
+                        <div>
+                            <h3>Domain &amp; North Austin Gluten-Free Guide</h3>
+                            <p>GF dining options around the Domain, Arboretum, and North Austin corridors.</p>
+                            <span class="read-link">Read Guide →</span>
+                        </div>
+                    </a>
+                    <a href="gluten-free-sxsw-austin-2026.html" class="guide-card">
+                        <div class="guide-card-icon">🎸</div>
+                        <div>
+                            <h3>SXSW 2026 Gluten-Free Guide</h3>
+                            <p>How to eat safely during SXSW — the best GF-friendly spots near venues and the Convention Center.</p>
+                            <span class="read-link">Read Guide →</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Cuisine Guides -->
+            <div class="guides-category">
+                <h2>🍽️ Cuisine &amp; Occasion Guides</h2>
+                <div class="guides-grid">
+                    <a href="gluten-free-bbq-austin.html" class="guide-card">
+                        <div class="guide-card-icon">🔥</div>
+                        <div>
+                            <h3>Gluten-Free BBQ in Austin</h3>
+                            <p>Which Austin BBQ joints are actually safe for GF diners — and what to order.</p>
+                            <span class="read-link">Read Guide →</span>
+                        </div>
+                    </a>
+                    <a href="gluten-free-mexican-food-austin.html" class="guide-card">
+                        <div class="guide-card-icon">🌮</div>
+                        <div>
+                            <h3>Gluten-Free Mexican Food in Austin</h3>
+                            <p>Austin's Mexican food scene is naturally GF-friendly — if you know what to watch for.</p>
+                            <span class="read-link">Read Guide →</span>
+                        </div>
+                    </a>
+                    <a href="gluten-free-italian-food-austin.html" class="guide-card">
+                        <div class="guide-card-icon">🍝</div>
+                        <div>
+                            <h3>Gluten-Free Italian Food in Austin</h3>
+                            <p>GF pasta, dedicated menus, and Italian restaurants that take cross-contamination seriously.</p>
+                            <span class="read-link">Read Guide →</span>
+                        </div>
+                    </a>
+                    <a href="gluten-free-pizza-austin.html" class="guide-card">
+                        <div class="guide-card-icon">🍕</div>
+                        <div>
+                            <h3>Gluten-Free Pizza in Austin</h3>
+                            <p>The best gluten-free pizza in Austin — GF crusts, dedicated ovens, and what's actually celiac-safe.</p>
+                            <span class="read-link">Read Guide →</span>
+                        </div>
+                    </a>
+                    <a href="gluten-free-breakfast-austin.html" class="guide-card">
+                        <div class="guide-card-icon">☀️</div>
+                        <div>
+                            <h3>Gluten-Free Breakfast &amp; Brunch in Austin</h3>
+                            <p>Austin's best GF-friendly breakfast spots — biscuits, pancakes, and morning coffee done safely.</p>
+                            <span class="read-link">Read Guide →</span>
+                        </div>
+                    </a>
+                    <a href="gluten-free-date-night-austin.html" class="guide-card">
+                        <div class="guide-card-icon">🕯️</div>
+                        <div>
+                            <h3>Gluten-Free Date Night in Austin</h3>
+                            <p>Romantic and upscale GF-friendly restaurants for a special night out in Austin.</p>
+                            <span class="read-link">Read Guide →</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Is X Gluten Free -->
+            <div class="guides-category">
+                <h2>❓ "Is [Restaurant] Gluten-Free?" Guides</h2>
+                <div class="guides-grid">
+                    <a href="is-torchys-tacos-gluten-free.html" class="guide-card">
+                        <div class="guide-card-icon">🌮</div>
+                        <div>
+                            <h3>Is Torchy's Tacos Gluten-Free?</h3>
+                            <p>What's safe to order at Austin's beloved taco chain, and what to avoid.</p>
+                            <span class="read-link">Read Guide →</span>
+                        </div>
+                    </a>
+                    <a href="is-p-terrys-gluten-free.html" class="guide-card">
+                        <div class="guide-card-icon">🍔</div>
+                        <div>
+                            <h3>Is P. Terry's Gluten-Free?</h3>
+                            <p>Austin's favorite burger chain — GF options, bun swaps, and what to watch for.</p>
+                            <span class="read-link">Read Guide →</span>
+                        </div>
+                    </a>
+                    <a href="is-kerbey-lane-gluten-free.html" class="guide-card">
+                        <div class="guide-card-icon">🥞</div>
+                        <div>
+                            <h3>Is Kerbey Lane Gluten-Free?</h3>
+                            <p>Kerbey Lane's GF menu options, dedicated items, and celiac considerations.</p>
+                            <span class="read-link">Read Guide →</span>
+                        </div>
+                    </a>
+                    <a href="is-magnolia-cafe-gluten-free.html" class="guide-card">
+                        <div class="guide-card-icon">🌸</div>
+                        <div>
+                            <h3>Is Magnolia Cafe Gluten-Free?</h3>
+                            <p>What GF options exist at Austin's 24-hour diner institution.</p>
+                            <span class="read-link">Read Guide →</span>
+                        </div>
+                    </a>
+                    <a href="is-chipotle-gluten-free.html" class="guide-card">
+                        <div class="guide-card-icon">🌯</div>
+                        <div>
+                            <h3>Is Chipotle Gluten-Free?</h3>
+                            <p>Chipotle's GF options and what celiac diners need to know about cross-contamination risk.</p>
+                            <span class="read-link">Read Guide →</span>
+                        </div>
+                    </a>
+                    <a href="is-chuys-gluten-free.html" class="guide-card">
+                        <div class="guide-card-icon">🌶️</div>
+                        <div>
+                            <h3>Is Chuy's Gluten-Free?</h3>
+                            <p>Chuy's Tex-Mex GF options — what's safe, what's not, and how to order.</p>
+                            <span class="read-link">Read Guide →</span>
+                        </div>
+                    </a>
+                    <a href="is-matts-el-rancho-gluten-free.html" class="guide-card">
+                        <div class="guide-card-icon">🇲🇽</div>
+                        <div>
+                            <h3>Is Matt's El Rancho Gluten-Free?</h3>
+                            <p>Austin's legendary Tex-Mex institution — GF options and what to be careful about.</p>
+                            <span class="read-link">Read Guide →</span>
+                        </div>
+                    </a>
+                    <a href="is-trudys-gluten-free.html" class="guide-card">
+                        <div class="guide-card-icon">🍹</div>
+                        <div>
+                            <h3>Is Trudy's Gluten-Free?</h3>
+                            <p>Trudy's Tex-Mex GF menu — margaritas, queso, and celiac-safe ordering tips.</p>
+                            <span class="read-link">Read Guide →</span>
+                        </div>
+                    </a>
+                    <a href="is-whataburger-gluten-free.html" class="guide-card">
+                        <div class="guide-card-icon">🍔</div>
+                        <div>
+                            <h3>Is Whataburger Gluten-Free?</h3>
+                            <p>Texas's iconic burger chain — what GF options exist and what you should skip.</p>
+                            <span class="read-link">Read Guide →</span>
+                        </div>
+                    </a>
+                    <a href="is-rudys-bbq-gluten-free.html" class="guide-card">
+                        <div class="guide-card-icon">🍖</div>
+                        <div>
+                            <h3>Is Rudy's BBQ Gluten-Free?</h3>
+                            <p>Rudy's Country Store and BBQ — GF-friendly meats and sides to watch out for.</p>
+                            <span class="read-link">Read Guide →</span>
+                        </div>
+                    </a>
+                    <a href="is-freebirds-gluten-free.html" class="guide-card">
+                        <div class="guide-card-icon">🌯</div>
+                        <div>
+                            <h3>Is Freebirds World Burrito Gluten-Free?</h3>
+                            <p>Freebirds' GF options, cross-contamination risks, and how to build a safe bowl.</p>
+                            <span class="read-link">Read Guide →</span>
+                        </div>
+                    </a>
+                    <a href="is-chick-fil-a-gluten-free.html" class="guide-card">
+                        <div class="guide-card-icon">🍗</div>
+                        <div>
+                            <h3>Is Chick-fil-A Gluten-Free?</h3>
+                            <p>Chick-fil-A's GF menu options and what celiac diners need to know.</p>
+                            <span class="read-link">Read Guide →</span>
+                        </div>
+                    </a>
+                    <a href="is-in-n-out-gluten-free.html" class="guide-card">
+                        <div class="guide-card-icon">🍔</div>
+                        <div>
+                            <h3>Is In-N-Out Gluten-Free?</h3>
+                            <p>In-N-Out's protein-style options and what GF diners can safely order.</p>
+                            <span class="read-link">Read Guide →</span>
+                        </div>
+                    </a>
+                    <a href="is-shake-shack-gluten-free.html" class="guide-card">
+                        <div class="guide-card-icon">🥤</div>
+                        <div>
+                            <h3>Is Shake Shack Gluten-Free?</h3>
+                            <p>Shake Shack's GF bun options, dedicated fryers, and cross-contamination risks.</p>
+                            <span class="read-link">Read Guide →</span>
+                        </div>
+                    </a>
+                    <a href="is-amys-ice-cream-gluten-free.html" class="guide-card">
+                        <div class="guide-card-icon">🍦</div>
+                        <div>
+                            <h3>Is Amy's Ice Cream Gluten-Free?</h3>
+                            <p>Amy's Ice Cream — Austin's beloved scoop shop and GF-safe options.</p>
+                            <span class="read-link">Read Guide →</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="guides-cta">
+                <h2>Ready to Find Your Next Meal?</h2>
+                <p>Browse our full directory of 40+ verified gluten-free restaurants across Austin.</p>
+                <a href="../" class="btn-primary">Browse All Restaurants</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer style="background:#2d5016;color:white;text-align:center;padding:2rem;margin-top:2rem;">
+        <p style="margin:0;opacity:0.85;">© 2026 Austin Gluten Free · <a href="../" style="color:#90ee90;">Home</a> · <a href="../#contact" style="color:#90ee90;">Contact</a> · <a href="../privacy-policy.html" style="color:#90ee90;">Privacy Policy</a></p>
+    </footer>
+
+</body>
+</html>
