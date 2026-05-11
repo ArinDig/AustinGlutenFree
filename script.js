@@ -844,6 +844,27 @@ const restaurants = [
             "images/restaurants/Pinthouse-4.png"
         ],
         featuredImage: "images/restaurants/Pinthouse-1_v2.png"
+    },
+    {
+        id: 50,
+        name: "Honest Mary's - Mueller",
+        cuisine: "american",
+        neighborhood: "east-austin",
+        price: "$$",
+        rating: 4.5,
+        description: "Fast-casual bowls with nearly everything GF by design. Tamari instead of soy sauce, clearly labeled menu, and a build-your-own format that makes customizing easy. Skip the farro (wheat). Mueller location.",
+        features: ["GF-Friendly Menu", "Tamari (No Soy Sauce)", "Build-Your-Own Bowls", "⚠️ Not Dedicated GF"],
+        location: "East Austin (Mueller)",
+        address: "2021 Aldrich St, Austin, TX 78723",
+        phone: "(512) 375-3906",
+        website: "honestmarys.com",
+        icon: "fas fa-leaf",
+        images: [
+            "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80",
+            "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&q=80",
+            "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80"
+        ],
+        featuredImage: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80"
     }
 ];
 
