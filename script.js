@@ -860,11 +860,11 @@ const restaurants = [
         website: "honestmarys.com",
         icon: "fas fa-leaf",
         images: [
-            "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80",
-            "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&q=80",
-            "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80"
+            "images/restaurants/honest-marys-1.png",
+            "images/restaurants/honest-marys-2.png",
+            "images/restaurants/honest-marys-3.png"
         ],
-        featuredImage: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80"
+        featuredImage: "images/restaurants/honest-marys-1.png"
     }
 ];
 
