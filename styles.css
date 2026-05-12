@@ -693,8 +693,9 @@ body {
 }
 
 .features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 2rem;
     margin-top: 3rem;
 }
@@ -705,6 +706,7 @@ body {
     background: #f8f9fa;
     border-radius: 12px;
     transition: transform 0.3s ease;
+    flex: 0 1 220px;
 }
 
 .feature:hover {
@@ -1006,7 +1008,8 @@ body {
     }
 
     .features {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        align-items: center;
     }
     
     .seo-content {
