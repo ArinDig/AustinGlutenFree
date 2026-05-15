@@ -484,14 +484,9 @@
     </footer>
 
     <script>
-        if (window.ezstandalone && typeof window.ezstandalone.define !== 'undefined') {
-            ezstandalone.define(106, 109, 114);
-            ezstandalone.enable();
-            ezstandalone.display();
-        }
-        if (typeof window.ezstandalone !== 'undefined' && typeof window.ezstandalone.showAds === 'function') {
-            window.ezstandalone.showAds();
-        }
+        ezstandalone.cmd.push(function() {
+            ezstandalone.showAds(106, 109, 114);
+        });
     </script>
 </body>
 </html>
