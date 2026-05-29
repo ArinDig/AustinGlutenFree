@@ -1,0 +1,34 @@
+{
+  "redirects": [
+    {
+      "source": "/restaurants/picnik.html",
+      "destination": "/restaurants/picnik---barton-springs.html",
+      "permanent": true
+    },
+    {
+      "source": "/restaurants/picnik-burnet-road.html",
+      "destination": "/restaurants/picnik---burnet-road.html",
+      "permanent": true
+    },
+    {
+      "source": "/restaurants/torchys-tacos.html",
+      "destination": "/guides/is-torchys-tacos-gluten-free.html",
+      "permanent": true
+    },
+    {
+      "source": "/restaurants/true-food-kitchen-domain.html",
+      "destination": "/restaurants/true-food-kitchen---domain.html",
+      "permanent": true
+    },
+    {
+      "source": "/restaurants/zucchini-kill.html",
+      "destination": "/restaurants/zucchini-kill-bakery.html",
+      "permanent": true
+    },
+    {
+      "source": "/restaurants/koriente.html",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}
