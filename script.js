@@ -865,6 +865,26 @@ const restaurants = [
             "images/restaurants/honest-marys-3.png"
         ],
         featuredImage: "images/restaurants/honest-marys-1.png"
+    },
+    {
+        id: 51,
+        name: "Dimassi's Mediterranean Buffet",
+        cuisine: "mediterranean",
+        neighborhood: "south-austin",
+        price: "$$",
+        rating: 4.3,
+        description: "All-you-can-eat halal Mediterranean buffet with 33+ clearly labeled gluten-free dishes out of 60+. Hummus, kabobs, falafel, grilled vegetables, and more. Shared kitchen — good for GF sensitivity, use caution with celiac. Avoid tabbouleh (bulgur) and the vermicelli rice.",
+        features: ["33+ GF Items Labeled", "Halal", "Vegan Options", "All-You-Can-Eat", "⚠️ Shared Kitchen"],
+        location: "South Austin",
+        address: "701 E Stassney Ln Unit B, Austin, TX 78745",
+        phone: "(737) 209-0296",
+        website: "dimassis.com",
+        icon: "fas fa-utensils",
+        images: [
+            "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=800&q=80",
+            "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80"
+        ],
+        featuredImage: "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=800&q=80"
     }
 ];
 
