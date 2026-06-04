@@ -881,10 +881,11 @@ const restaurants = [
         website: "dimassis.com",
         icon: "fas fa-utensils",
         images: [
-            "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=800&q=80",
-            "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80"
+            "images/restaurants/Dimassi-1.png",
+            "images/restaurants/Dimassi-2.png",
+            "images/restaurants/Dimassi-3.png"
         ],
-        featuredImage: "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=800&q=80"
+        featuredImage: "images/restaurants/Dimassi-1.png"
     }
 ];
 
