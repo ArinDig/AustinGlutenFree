@@ -886,6 +886,48 @@ const restaurants = [
             "images/restaurants/Dimassi-3.png"
         ],
         featuredImage: "images/restaurants/Dimassi-1.png"
+    },
+    {
+        id: 52,
+        name: "Franklin Barbecue",
+        cuisine: "american",
+        neighborhood: "east-austin",
+        price: "$$",
+        rating: 4.8,
+        description: "Austin's most famous BBQ joint — and one of the best naturally GF meals in the city. Brisket, ribs, turkey, and pulled pork are all salt-pepper-smoke: no wheat, no rubs, no marinades. Arrive 1-2 hours before opening or risk a sell-out. Skip the white bread and banana pudding. Ask about the sausage if sensitive.",
+        features: ["Naturally GF Meats", "World-Famous Brisket", "No Fryers", "Sells Out Daily"],
+        location: "East Austin",
+        address: "900 E 11th St, Austin, TX 78702",
+        phone: "(512) 653-1187",
+        website: "franklinbarbecue.com",
+        icon: "fas fa-fire",
+        images: [
+            "images/restaurants/Franklin-BBQ-1.png",
+            "images/restaurants/Franklin-BBQ-2.png",
+            "images/restaurants/Franklin-BBQ-3.png"
+        ],
+        featuredImage: "images/restaurants/Franklin-BBQ-1.png"
+    },
+    {
+        id: 53,
+        name: "Veracruz All Natural",
+        cuisine: "mexican",
+        neighborhood: "east-austin",
+        price: "$",
+        rating: 4.7,
+        description: "Austin's most beloved breakfast taco spot uses 100% handmade corn masa tortillas — no wheat flour anywhere. The entire taco menu is naturally GF. The migas taco is legendary. Multiple East and South Austin locations. Vegan and vegetarian options throughout.",
+        features: ["100% Corn Masa Tortillas", "Naturally GF Menu", "Vegan Options", "Austin Icon"],
+        location: "East Austin (multiple locations)",
+        address: "1704 E Cesar Chavez St, Austin, TX 78702",
+        phone: "(512) 981-1760",
+        website: "veracruzallnatural.com",
+        icon: "fas fa-pepper-hot",
+        images: [
+            "images/restaurants/Veracruz-1.png",
+            "images/restaurants/Veracruz-2.png",
+            "images/restaurants/Veracruz-3.png"
+        ],
+        featuredImage: "images/restaurants/Veracruz-1.png"
     }
 ];
 
