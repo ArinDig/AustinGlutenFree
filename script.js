@@ -928,6 +928,26 @@ const restaurants = [
             "images/restaurants/Veracruz-3.png"
         ],
         featuredImage: "images/restaurants/Veracruz-1.png"
+    },
+    {
+        id: 54,
+        name: "Terry Black's Barbecue",
+        cuisine: "american",
+        neighborhood: "south-austin",
+        price: "$$",
+        rating: 4.7,
+        description: "Austin BBQ institution open for dinner with a full bar — a rare combination. Brisket, ribs, turkey, and pulled pork are all naturally GF (salt, pepper, smoke — no wheat). Unlike Franklin, you don't need to arrive at dawn. Indoor seating, air-conditioned.",
+        features: ["Naturally GF Meats", "Open for Dinner", "Full Bar", "Indoor Seating"],
+        location: "South Austin",
+        address: "1003 Barton Springs Rd, Austin, TX 78704",
+        website: "terryblacksbbq.com",
+        icon: "fas fa-fire",
+        images: [
+            "images/restaurants/Terry-Blacks-1.png",
+            "images/restaurants/Terry-Blacks-2.png",
+            "images/restaurants/Terry-Blacks-3.png"
+        ],
+        featuredImage: "images/restaurants/Terry-Blacks-1.png"
     }
 ];
 
