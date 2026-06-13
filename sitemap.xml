@@ -421,12 +421,6 @@
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://austinglutenfree.com/guides/is-chick-fil-a-gluten-free.html</loc>
-        <lastmod>2026-03-20</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
         <loc>https://austinglutenfree.com/guides/is-in-n-out-gluten-free.html</loc>
         <lastmod>2026-03-20</lastmod>
         <changefreq>monthly</changefreq>
@@ -476,7 +470,7 @@
     </url>
     <url>
         <loc>https://austinglutenfree.com/guides/is-chick-fil-a-gluten-free.html</loc>
-        <lastmod>2026-05-29</lastmod>
+        <lastmod>2026-06-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -497,5 +491,11 @@
         <lastmod>2026-05-11</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://austinglutenfree.com/guides/is-hopdoddy-gluten-free.html</loc>
+        <lastmod>2026-06-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
 </urlset>
