@@ -948,6 +948,34 @@ const restaurants = [
             "images/restaurants/Terry-Blacks-3.png"
         ],
         featuredImage: "images/restaurants/Terry-Blacks-1.png"
+    },
+    {
+        id: 55,
+        name: "Loro Asian Smokehouse & Bar",
+        cuisine: "asian",
+        neighborhood: "south-austin",
+        price: "$$",
+        rating: 4.4,
+        description: "Asian smokehouse from James Beard winners Tyson Cole (Uchi) and Aaron Franklin (Franklin Barbecue). GF items are marked on the menu and a celiac allergen list is available at the bar. Smoked meats and rice bowls are the safest bets — but there's no dedicated fryer, so skip fried items.",
+        features: ["GF-Marked Menu", "Celiac Allergen List", "Smoked Meats", "No Dedicated Fryer"],
+        location: "South Lamar & Domain",
+        address: "2115 S Lamar Blvd, Austin, TX 78704",
+        website: "loroeats.com",
+        icon: "fas fa-fire"
+    },
+    {
+        id: 56,
+        name: "Suerte",
+        cuisine: "mexican",
+        neighborhood: "east-austin",
+        price: "$$$",
+        rating: 4.6,
+        description: "Award-winning East Austin restaurant built around masa, with heirloom corn nixtamalized in-house. Tortillas and chips are corn, there's a dedicated fryer, and staff ask about your specific cross-contact level. One of the better non-dedicated options for celiac diners.",
+        features: ["House-Nixtamalized Corn", "Dedicated Fryer", "GF Menu", "Knowledgeable Staff"],
+        location: "East Austin",
+        address: "1800 E 6th St, Austin, TX 78702",
+        website: "suerteatx.com",
+        icon: "fas fa-pepper-hot"
     }
 ];
 
