@@ -952,6 +952,10 @@ const restaurants = [
     {
         id: 55,
         name: "Loro Asian Smokehouse & Bar",
+        // Explicit slug: the auto-generated one turns " & " into "---", producing
+        // loro-asian-smokehouse---bar.html, but the page was created without the
+        // "& Bar" segment. This was AGF's only live internal link to a 404.
+        slug: "loro-asian-smokehouse",
         cuisine: "asian",
         neighborhood: "south-austin",
         price: "$$",
@@ -1183,7 +1187,7 @@ function renderRestaurants(restaurantsToRender = filteredRestaurants) {
                     `).join('')}
                 </div>
                 <div class="restaurant-actions">
-                    <a href="restaurants/${restaurant.name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/'/g, '').replace(/\s+&\s+/g, '---').replace(/\s+/g, '-').replace(/,/g, '')}.html" class="action-btn action-btn-primary">
+                    <a href="restaurants/${restaurant.slug || restaurant.name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/'/g, '').replace(/\s+&\s+/g, '---').replace(/\s+/g, '-').replace(/,/g, '')}.html" class="action-btn action-btn-primary">
                         <i class="fas fa-info-circle"></i> View Details
                     </a>
                     <a href="tel:${restaurant.phone}" class="action-btn">
