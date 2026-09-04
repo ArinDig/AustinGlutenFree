@@ -8,7 +8,7 @@
     </url>
     <url>
         <loc>https://austinglutenfree.com/privacy-policy.html</loc>
-        <lastmod>2025-12-14</lastmod>
+        <lastmod>2026-08-28</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
@@ -20,7 +20,7 @@
     </url>
     <url>
         <loc>https://austinglutenfree.com/resources.html</loc>
-        <lastmod>2026-08-24</lastmod>
+        <lastmod>2026-08-28</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
@@ -44,13 +44,13 @@
     </url>
     <url>
         <loc>https://austinglutenfree.com/guides/gluten-free-pizza-austin.html</loc>
-        <lastmod>2025-12-23</lastmod>
+        <lastmod>2026-08-28</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://austinglutenfree.com/guides/gluten-free-breakfast-austin.html</loc>
-        <lastmod>2025-12-23</lastmod>
+        <lastmod>2026-08-28</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -362,19 +362,19 @@
     </url>
     <url>
         <loc>https://austinglutenfree.com/guides/is-torchys-tacos-gluten-free.html</loc>
-        <lastmod>2026-03-20</lastmod>
+        <lastmod>2026-08-28</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://austinglutenfree.com/guides/is-p-terrys-gluten-free.html</loc>
-        <lastmod>2026-03-20</lastmod>
+        <lastmod>2026-08-28</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://austinglutenfree.com/guides/is-chuys-gluten-free.html</loc>
-        <lastmod>2026-03-20</lastmod>
+        <lastmod>2026-08-28</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -416,13 +416,13 @@
     </url>
     <url>
         <loc>https://austinglutenfree.com/guides/is-rudys-bbq-gluten-free.html</loc>
-        <lastmod>2026-03-20</lastmod>
+        <lastmod>2026-08-28</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://austinglutenfree.com/guides/is-amys-ice-cream-gluten-free.html</loc>
-        <lastmod>2026-03-20</lastmod>
+        <lastmod>2026-08-28</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -446,7 +446,7 @@
     </url>
     <url>
         <loc>https://austinglutenfree.com/guides/is-matts-el-rancho-gluten-free.html</loc>
-        <lastmod>2026-03-20</lastmod>
+        <lastmod>2026-08-28</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -524,6 +524,24 @@
     </url>
     <url>
         <loc>https://austinglutenfree.com/restaurants/suerte.html</loc>
+        <lastmod>2026-08-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://austinglutenfree.com/guides/is-culvers-gluten-free.html</loc>
+        <lastmod>2026-08-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://austinglutenfree.com/restaurants/franklin-barbecue.html</loc>
+        <lastmod>2026-08-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://austinglutenfree.com/restaurants/veracruz-all-natural.html</loc>
         <lastmod>2026-08-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
