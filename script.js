@@ -981,6 +981,53 @@ const restaurants = [
         address: "1800 E 6th St, Austin, TX 78702",
         website: "suerteatx.com",
         icon: "fas fa-pepper-hot"
+    },
+    {
+        id: 57,
+        name: "OMG Squee",
+        slug: "omg-squee",
+        cuisine: "bakery",
+        neighborhood: "east-austin",
+        price: "$$",
+        rating: 4.6,
+        description: "A fully dedicated gluten-free dessert shop making Asian and Asian-American sweets — mochi donuts, taiyaki sundaes, macarons, cheesecake and bubble tea. The kitchen is also free of peanuts and cashews, which is rare for a bakery since so many gluten-free recipes lean on nut flours. Nothing here needs a conversation before you order.",
+        features: ["Dedicated GF Kitchen", "Peanut & Cashew Free", "Mochi Donuts", "Bubble Tea"],
+        location: "East Austin",
+        address: "4607 Bolm Rd, Suite A, Austin, TX 78702",
+        phone: "(512) 435-9113",
+        website: "squeeclub.com",
+        icon: "fas fa-ice-cream"
+    },
+    {
+        id: 58,
+        name: "Maaribu Cafe",
+        slug: "maaribu-cafe",
+        cuisine: "bakery",
+        neighborhood: "south-austin",
+        price: "$$",
+        rating: 4.5,
+        description: "A dedicated gluten-free bakery counter inside a South First home and design shop, with everything baked from scratch in a private kitchen on site. Cookies, cupcakes and scones daily, plus superfood lattes built on organic plant milks and adaptogens. Gluten-free catering available with 48 hours' notice. Note the cafe is the South First address — the Guadalupe showroom has no food.",
+        features: ["Dedicated GF", "Scratch Made Daily", "Wellness Drinks", "GF Catering"],
+        location: "South Austin (South First)",
+        address: "1413 S 1st St, Austin, TX 78704",
+        phone: "(512) 761-9916",
+        website: "maaribu.com",
+        icon: "fas fa-mug-hot"
+    },
+    {
+        id: 59,
+        name: "Gati Cafe",
+        slug: "gati-cafe",
+        cuisine: "bakery",
+        neighborhood: "east-austin",
+        price: "$$",
+        rating: 4.6,
+        description: "Everything Gati makes is gluten-free and vegan — the bakery case, the breakfast and lunch kitchen, and the coconut-milk ice cream. The kitchen menu draws on flavors from Oaxaca to Thailand to Australia rather than the usual gluten-free substitutions. Open daily until 10pm, though the kitchen closes at 2pm on weekdays. Takes custom cake orders from its dedicated production bakery.",
+        features: ["100% Gluten-Free", "100% Vegan", "Vegan Ice Cream", "Custom Cakes"],
+        location: "East Austin (Holly)",
+        address: "1512 Holly St, Austin, TX 78702",
+        website: "gatiatx.com",
+        icon: "fas fa-birthday-cake"
     }
 ];
 
