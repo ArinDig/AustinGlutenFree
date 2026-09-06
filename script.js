@@ -1029,6 +1029,7 @@ const restaurants = [
         location: "East Austin (Holly)",
         address: "1512 Holly St, Austin, TX 78702",
         website: "gatiatx.com",
+        images: ["images/restaurants/Gati-1.jpg", "images/restaurants/Gati-2.jpg", "images/restaurants/Gati-3.jpg", "images/restaurants/Gati-4.jpg"],
         icon: "fas fa-birthday-cake"
     }
 ];

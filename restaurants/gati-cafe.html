@@ -45,12 +45,14 @@
     <meta property="og:url" content="https://austinglutenfree.com/restaurants/gati-cafe.html">
     <meta property="og:title" content="Gati Cafe | 100% Gluten-Free and Vegan in East Austin">
     <meta property="og:description" content="Gati Cafe on Holly Street is entirely gluten-free and vegan &mdash; a bakery, a breakfast and lunch kitchen, coconut-milk ice cream and a coffee bar, open every day until 10pm.">
+    <meta property="og:image" content="https://austinglutenfree.com/images/restaurants/Gati-1.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://austinglutenfree.com/restaurants/gati-cafe.html">
     <meta property="twitter:title" content="Gati Cafe | 100% Gluten-Free and Vegan in East Austin">
     <meta property="twitter:description" content="Gati Cafe on Holly Street is entirely gluten-free and vegan &mdash; a bakery, a breakfast and lunch kitchen, coconut-milk ice cream and a coffee bar, open every day until 10pm.">
+    <meta property="twitter:image" content="https://austinglutenfree.com/images/restaurants/Gati-1.jpg">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://austinglutenfree.com/restaurants/gati-cafe.html">
@@ -68,6 +70,7 @@
     "description": "Entirely gluten-free and vegan cafe in East Austin: bakery, breakfast and lunch kitchen, coconut-milk ice cream and coffee bar.",
     "servesCuisine": "Bakery, Cafe &amp; Ice Cream",
     "priceRange": "$$",
+    "image": ["https://austinglutenfree.com/images/restaurants/Gati-1.jpg", "https://austinglutenfree.com/images/restaurants/Gati-2.jpg"],
     "address": {
         "@type": "PostalAddress",
         "streetAddress": "1512 Holly St",
@@ -156,6 +159,17 @@
         <section class="restaurant-hero">
             <div class="container">
                 <div class="restaurant-header">
+                    <div class="restaurant-images">
+                        <div class="image-gallery">
+                            <img src="../images/restaurants/Gati-1.jpg" alt="Gluten-free and vegan pastry case at Gati Cafe in East Austin" class="main-image" loading="eager" decoding="async" width="600" height="400">
+                            <div class="thumbnail-gallery">
+                                <img src="../images/restaurants/Gati-1.jpg" alt="Gluten-free and vegan pastry case at Gati Cafe in East Austin" class="thumbnail active" onclick="changeMainImage(this)">
+                                <img src="../images/restaurants/Gati-2.jpg" alt="Gati Cafe exterior mural on Holly Street, Austin" class="thumbnail" loading="lazy" decoding="async" onclick="changeMainImage(this)">
+                                <img src="../images/restaurants/Gati-3.jpg" alt="Order counter and menu board inside Gati Cafe" class="thumbnail" loading="lazy" decoding="async" onclick="changeMainImage(this)">
+                                <img src="../images/restaurants/Gati-4.jpg" alt="Gati Cafe sign &mdash; coffee, bakery, gluten-free breakfast and lunch" class="thumbnail" loading="lazy" decoding="async" onclick="changeMainImage(this)">
+                            </div>
+                        </div>
+                    </div>
                     <div class="restaurant-info">
                         <h1>Gati Cafe</h1>
                         <div class="quick-info">
@@ -267,5 +281,13 @@
         </div>
     </footer>
 
+    <script>
+    function changeMainImage(thumbnail) {
+        const mainImage = document.querySelector('.main-image');
+        mainImage.src = thumbnail.src;
+        document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+        thumbnail.classList.add('active');
+    }
+    </script>
 </body>
 </html>
