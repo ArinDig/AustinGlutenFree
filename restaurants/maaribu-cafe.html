@@ -45,12 +45,14 @@
     <meta property="og:url" content="https://austinglutenfree.com/restaurants/maaribu-cafe.html">
     <meta property="og:title" content="Maaribu Cafe | Dedicated Gluten-Free Bakery in South Austin">
     <meta property="og:description" content="Maaribu Cafe on South First is a dedicated gluten-free bakery and coffee counter &mdash; cookies, cupcakes and scones made from scratch daily, plus adaptogen lattes and gluten-free catering.">
+    <meta property="og:image" content="https://austinglutenfree.com/images/restaurants/Maaribu-2.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://austinglutenfree.com/restaurants/maaribu-cafe.html">
     <meta property="twitter:title" content="Maaribu Cafe | Dedicated Gluten-Free Bakery in South Austin">
     <meta property="twitter:description" content="Maaribu Cafe on South First is a dedicated gluten-free bakery and coffee counter &mdash; cookies, cupcakes and scones made from scratch daily, plus adaptogen lattes and gluten-free catering.">
+    <meta property="twitter:image" content="https://austinglutenfree.com/images/restaurants/Maaribu-2.jpg">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://austinglutenfree.com/restaurants/maaribu-cafe.html">
@@ -68,6 +70,7 @@
     "description": "Dedicated gluten-free bakery and cafe on South First Street, Austin. Scratch-made baked goods, wellness beverages and gluten-free catering.",
     "servesCuisine": "Bakery &amp; Cafe",
     "priceRange": "$$",
+    "image": ["https://austinglutenfree.com/images/restaurants/Maaribu-1.jpg", "https://austinglutenfree.com/images/restaurants/Maaribu-2.jpg"],
     "address": {
         "@type": "PostalAddress",
         "streetAddress": "1413 S 1st St",
@@ -158,6 +161,17 @@
         <section class="restaurant-hero">
             <div class="container">
                 <div class="restaurant-header">
+                    <div class="restaurant-images">
+                        <div class="image-gallery">
+                            <img src="../images/restaurants/Maaribu-1.jpg" alt="Gluten-free pastry case at Maaribu Cafe on South First in Austin" class="main-image" loading="eager" decoding="async" width="600" height="400">
+                            <div class="thumbnail-gallery">
+                                <img src="../images/restaurants/Maaribu-1.jpg" alt="Gluten-free pastry case at Maaribu Cafe on South First in Austin" class="thumbnail active" onclick="changeMainImage(this)">
+                                <img src="../images/restaurants/Maaribu-2.jpg" alt="Maaribu Cafe exterior on South First Street, Austin" class="thumbnail" loading="lazy" decoding="async" onclick="changeMainImage(this)">
+                                <img src="../images/restaurants/Maaribu-3.jpg" alt="Bakery and coffee counter inside Maaribu Cafe" class="thumbnail" loading="lazy" decoding="async" onclick="changeMainImage(this)">
+                                <img src="../images/restaurants/Maaribu-4.jpg" alt="Iced drink from Maaribu Cafe" class="thumbnail" loading="lazy" decoding="async" onclick="changeMainImage(this)">
+                            </div>
+                        </div>
+                    </div>
                     <div class="restaurant-info">
                         <h1>Maaribu Cafe</h1>
                         <div class="quick-info">
@@ -270,5 +284,13 @@
         </div>
     </footer>
 
+    <script>
+    function changeMainImage(thumbnail) {
+        const mainImage = document.querySelector('.main-image');
+        mainImage.src = thumbnail.src;
+        document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+        thumbnail.classList.add('active');
+    }
+    </script>
 </body>
 </html>
