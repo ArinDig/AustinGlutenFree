@@ -1,0 +1,20 @@
+# GitHub Pages / Jekyll configuration
+#
+# This site is plain static HTML. The only job of this file is to stop internal
+# working notes and one-off build scripts from being published to the live site.
+# They stay in the repository and in git history; they just are not copied into
+# the deployed output, so they are no longer fetchable at austinglutenfree.com/.
+#
+# Nothing here contains credentials. This is housekeeping, not an incident.
+
+exclude:
+  - "*.md"      # internal notes: EZOIC_*, GSC_CANONICAL_FIX, CONTACT_FORM_SETUP, README, etc.
+  - "*.py"      # one-off image scripts: create_images.py, download_images.py
+  - "*.sh"      # one-off shell helpers: download_*.sh, update_*.sh
+  - package.json
+  - requirements.txt # Python deps for the one-off image scripts
+  - vercel.json      # inert on GitHub Pages; kept in repo for reference only
+
+# Deliberately NOT excluded, these must stay in the published output:
+#   CNAME, robots.txt, sitemap.xml, ads.txt, styles.css, script.js,
+#   index.html and all page directories, images/
