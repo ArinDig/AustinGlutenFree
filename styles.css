@@ -67,7 +67,8 @@ body {
     text-decoration: none;
 }
 
-.nav-logo h1 {
+.nav-logo h1,
+.nav-logo .logo-text {
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
     font-weight: 700;
