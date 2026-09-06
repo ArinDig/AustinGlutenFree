@@ -997,6 +997,7 @@ const restaurants = [
         address: "4607 Bolm Rd, Suite A, Austin, TX 78702",
         phone: "(512) 435-9113",
         website: "squeeclub.com",
+        images: ["images/restaurants/OMGSquee-1.jpg", "images/restaurants/OMGSquee-2.jpg", "images/restaurants/OMGSquee-3.jpg", "images/restaurants/OMGSquee-4.jpg"],
         icon: "fas fa-ice-cream"
     },
     {

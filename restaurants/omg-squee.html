@@ -45,14 +45,14 @@
     <meta property="og:url" content="https://austinglutenfree.com/restaurants/omg-squee.html">
     <meta property="og:title" content="OMG Squee | Dedicated Gluten-Free Dessert Shop in East Austin">
     <meta property="og:description" content="OMG Squee is a fully dedicated gluten-free dessert shop in East Austin making mochi donuts, taiyaki sundaes, macarons and bubble tea. The kitchen is also free of peanuts and cashews.">
-    <meta property="og:image" content="https://austinglutenfree.com/images/og-default.jpg">
+    <meta property="og:image" content="https://austinglutenfree.com/images/restaurants/OMGSquee-1.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://austinglutenfree.com/restaurants/omg-squee.html">
     <meta property="twitter:title" content="OMG Squee | Dedicated Gluten-Free Dessert Shop in East Austin">
     <meta property="twitter:description" content="OMG Squee is a fully dedicated gluten-free dessert shop in East Austin making mochi donuts, taiyaki sundaes, macarons and bubble tea. The kitchen is also free of peanuts and cashews.">
-    <meta property="twitter:image" content="https://austinglutenfree.com/images/og-default.jpg">
+    <meta property="twitter:image" content="https://austinglutenfree.com/images/restaurants/OMGSquee-1.jpg">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://austinglutenfree.com/restaurants/omg-squee.html">
@@ -70,6 +70,7 @@
     "description": "Dedicated gluten-free Asian and Asian-American dessert shop in East Austin. Kitchen is also peanut and cashew free.",
     "servesCuisine": "Dessert &amp; Bakery",
     "priceRange": "$$",
+    "image": ["https://austinglutenfree.com/images/restaurants/OMGSquee-1.jpg", "https://austinglutenfree.com/images/restaurants/OMGSquee-2.jpg"],
     "address": {
         "@type": "PostalAddress",
         "streetAddress": "4607 Bolm Rd, Suite A",
@@ -160,6 +161,17 @@
         <section class="restaurant-hero">
             <div class="container">
                 <div class="restaurant-header">
+                    <div class="restaurant-images">
+                        <div class="image-gallery">
+                            <img src="../images/restaurants/OMGSquee-1.jpg" alt="French macarons in the case at OMG Squee, a dedicated gluten-free dessert shop in East Austin" class="main-image" loading="eager" decoding="async" width="600" height="400">
+                            <div class="thumbnail-gallery">
+                                <img src="../images/restaurants/OMGSquee-1.jpg" alt="French macarons in the case at OMG Squee, a dedicated gluten-free dessert shop in East Austin" class="thumbnail active" onclick="changeMainImage(this)">
+                                <img src="../images/restaurants/OMGSquee-2.jpg" alt="OMG Squee exterior &mdash; pink building on Bolm Road, Austin" class="thumbnail" loading="lazy" decoding="async" onclick="changeMainImage(this)">
+                                <img src="../images/restaurants/OMGSquee-3.jpg" alt="Menu boards at OMG Squee showing gluten-free mochi donuts and taiyaki sundaes" class="thumbnail" loading="lazy" decoding="async" onclick="changeMainImage(this)">
+                                <img src="../images/restaurants/OMGSquee-4.jpg" alt="Counter and neon taiyaki sign inside OMG Squee" class="thumbnail" loading="lazy" decoding="async" onclick="changeMainImage(this)">
+                            </div>
+                        </div>
+                    </div>
                     <div class="restaurant-info">
                         <h1>OMG Squee</h1>
                         <div class="quick-info">
@@ -271,5 +283,13 @@
         </div>
     </footer>
 
+    <script>
+    function changeMainImage(thumbnail) {
+        const mainImage = document.querySelector('.main-image');
+        mainImage.src = thumbnail.src;
+        document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+        thumbnail.classList.add('active');
+    }
+    </script>
 </body>
 </html>
