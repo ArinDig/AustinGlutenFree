@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Austin Gluten Free">
+  <rect width="64" height="64" rx="14" fill="#2d5016"/>
+  <path d="M50 11c3 15-1 28-11 36-7 5.6-15.6 7-22.6 4.4C13 36 19 22.6 31 15.6 36.6 12.4 43.4 10.8 50 11z" fill="#b9e0b0"/>
+  <path d="M50 11C39 19 27.4 30.6 20.4 47.4" stroke="#2d5016" stroke-width="3.4" stroke-linecap="round" fill="none"/>
+</svg>
