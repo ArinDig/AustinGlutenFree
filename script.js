@@ -966,6 +966,7 @@ const restaurants = [
         location: "South Lamar & Domain",
         address: "2115 S Lamar Blvd, Austin, TX 78704",
         website: "loroeats.com",
+        images: ["images/restaurants/Loro-1.jpg", "images/restaurants/Loro-2.jpg", "images/restaurants/Loro-3.jpg"],
         icon: "fas fa-fire"
     },
     {
@@ -1012,6 +1013,7 @@ const restaurants = [
         address: "1413 S 1st St, Austin, TX 78704",
         phone: "(512) 761-9916",
         website: "maaribu.com",
+        images: ["images/restaurants/Maaribu-1.jpg", "images/restaurants/Maaribu-2.jpg", "images/restaurants/Maaribu-3.jpg", "images/restaurants/Maaribu-4.jpg"],
         icon: "fas fa-mug-hot"
     },
     {
@@ -1209,9 +1211,7 @@ function renderRestaurants(restaurantsToRender = filteredRestaurants) {
                          width="150"
                          height="125"
                          onerror="this.style.display='none';">
-                    <div class="more-photos">
-                        <span>+${restaurant.images ? restaurant.images.length : 3}</span>
-                    </div>
+                    ${morePhotosBadge(restaurant)}
                 </div>
             </div>
             <div class="restaurant-info">
@@ -1285,6 +1285,16 @@ function formatCuisine(cuisine) {
         'cafe': 'Cafe'
     };
     return cuisineMap[cuisine] || cuisine;
+}
+
+// The card already shows three images (one main + two thumbnails), so the badge
+// must report the REMAINDER, not the total. Returns '' when there is nothing more
+// to show, which also removes a dead control on venues with no gallery.
+function morePhotosBadge(restaurant) {
+    const total = restaurant.images ? restaurant.images.length : 0;
+    const extra = Math.max(0, total - 3);
+    if (extra === 0) return '';
+    return `<div class="more-photos"><span>+${extra}</span></div>`;
 }
 
 function generateStars(rating) {
