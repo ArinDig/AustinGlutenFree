@@ -1,0 +1,98 @@
+name: Sync ads.txt from Ezoic
+
+# WHY THIS EXISTS
+# Ezoic's Ads.txt Manager list changes constantly as they add and drop demand
+# partners. ADP solves this with a server-side 301 from /ads.txt to the manager
+# URL, but AGF is on GitHub Pages, which cannot do server-side redirects. So the
+# file has to be a local copy — and a local copy goes stale silently, which is
+# exactly what happened (27 entries missing, 26 no longer authorised).
+#
+# This job re-fetches the managed file on a schedule and commits it only when it
+# has actually changed.
+#
+# SAFETY: ads.txt is an authorisation list. Overwriting it with a truncated file
+# or an error page would de-authorise every demand partner and drop ad revenue to
+# near zero, silently. Every guard below exists to make that impossible — the job
+# fails loudly instead of committing something wrong.
+
+on:
+  schedule:
+    - cron: '17 7 * * *'   # daily, 07:17 UTC. Off the hour on purpose: GitHub
+                           # queues heavily at :00 and delays scheduled jobs.
+  workflow_dispatch:        # lets you run it by hand from the Actions tab
+
+permissions:
+  contents: write           # needed to commit the refreshed file
+
+concurrency:
+  group: ads-txt-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch managed ads.txt
+        run: |
+          set -euo pipefail
+          curl -sS --fail --location --retry 3 --retry-delay 5 --max-time 60 \
+            "https://srv.adstxtmanager.com/19390/austinglutenfree.com" \
+            -o ads.txt.new
+
+      - name: Validate before replacing anything
+        run: |
+          set -euo pipefail
+
+          # Guard 1 — not empty / not a stub
+          bytes=$(wc -c < ads.txt.new)
+          if [ "$bytes" -lt 1000 ]; then
+            echo "::error::Fetched file is only ${bytes} bytes. Refusing to overwrite."
+            exit 1
+          fi
+
+          # Guard 2 — it is actually our ads.txt, not someone else's or an error page
+          grep -q '^ownerdomain=austinglutenfree.com' ads.txt.new || {
+            echo "::error::ownerdomain line missing or wrong. Refusing to overwrite."; exit 1; }
+
+          # Guard 3 — no HTML (error pages and captive portals return HTML)
+          if grep -qiE '<html|<!doctype' ads.txt.new; then
+            echo "::error::Response looks like HTML, not ads.txt. Refusing to overwrite."
+            exit 1
+          fi
+
+          # Guard 4 — plausible entry count, and never a big shrink vs what we serve
+          new_count=$(grep -cE '^[a-z0-9.-]+\.[a-z]{2,},' ads.txt.new || true)
+          old_count=$(grep -cE '^[a-z0-9.-]+\.[a-z]{2,},' ads.txt || echo 0)
+          echo "entries: current=${old_count} fetched=${new_count}"
+          if [ "$new_count" -lt 50 ]; then
+            echo "::error::Only ${new_count} entries fetched. Refusing to overwrite."
+            exit 1
+          fi
+          if [ "$old_count" -gt 0 ] && [ "$new_count" -lt $((old_count / 2)) ]; then
+            echo "::error::Entry count more than halved (${old_count} -> ${new_count}). Refusing; check Ezoic."
+            exit 1
+          fi
+
+          # Guard 5 — our AdSense publisher ID must survive
+          grep -q 'pub-1749871118217579' ads.txt.new || {
+            echo "::error::AdSense publisher ID missing from fetched file. Refusing to overwrite."; exit 1; }
+
+          echo "All guards passed."
+
+      - name: Commit if changed
+        run: |
+          set -euo pipefail
+          if cmp -s ads.txt.new ads.txt; then
+            echo "ads.txt already current — nothing to do."
+            rm -f ads.txt.new
+            exit 0
+          fi
+          mv ads.txt.new ads.txt
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ads.txt
+          git commit -m "chore: sync ads.txt from Ezoic Ads.txt Manager [skip ci]"
+          git push
+          echo "ads.txt updated and pushed."
