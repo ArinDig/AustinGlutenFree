@@ -16,10 +16,19 @@ name: Sync ads.txt from Ezoic
 # fails loudly instead of committing something wrong.
 
 on:
-  schedule:
-    - cron: '17 7 * * *'   # daily, 07:17 UTC. Off the hour on purpose: GitHub
-                           # queues heavily at :00 and delays scheduled jobs.
-  workflow_dispatch:        # lets you run it by hand from the Actions tab
+  # SCHEDULE PAUSED - 11 September 2026, while Ezoic's ADS.TXT SETUP is run.
+  # ads.txt has been deliberately stripped to the AdSense line only so that
+  # Ezoic's auto setup does not absorb its own partner list into manager
+  # account 19390. If this job fired it would refill the file mid-setup.
+  #
+  # RE-ENABLE by uncommenting the two lines below once Ezoic's Ads.txt Setup
+  # step is resolved (and note the whole workflow becomes redundant if AGF
+  # moves to Vercel and serves /ads.txt via the 301 in vercel.json).
+  #
+  # schedule:
+  #   - cron: '17 7 * * *'   # daily, 07:17 UTC. Off the hour on purpose: GitHub
+  #                          # queues heavily at :00 and delays scheduled jobs.
+  workflow_dispatch:        # manual runs from the Actions tab still work
 
 permissions:
   contents: write           # needed to commit the refreshed file

@@ -1,6 +1,23 @@
 {
   "redirects": [
     {
+      "//": "Ezoic requires ads.txt to be SERVED BY their Ads.txt Manager, not merely to contain",
+      "//2": "matching entries - a static file can never pass their check, however correct it is.",
+      "//3": "Manager account 19390. This is the same arrangement that turned ADP's check green.",
+      "//4": "",
+      "//5": "statusCode 301 on purpose - do NOT use \"permanent\": true here. In vercel.json,",
+      "//6": "permanent:true emits 308 and permanent:false emits 307, and ads.txt crawlers are",
+      "//7": "simple clients that don't all follow 307/308. statusCode and permanent are mutually",
+      "//8": "exclusive, so this entry sets statusCode only. The IAB spec allows exactly one",
+      "//9": "off-domain redirect, which is what this is.",
+      "//10": "",
+      "//11": "The static /ads.txt stays in the repo deliberately. Vercel evaluates redirects before",
+      "//12": "the filesystem, so it is shadowed - delete this entry and the file serves again.",
+      "source": "/ads.txt",
+      "destination": "https://srv.adstxtmanager.com/19390/austinglutenfree.com",
+      "statusCode": 301
+    },
+    {
       "source": "/restaurants/picnik.html",
       "destination": "/restaurants/picnik---barton-springs.html",
       "permanent": true
