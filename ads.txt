@@ -10,9 +10,13 @@
 #
 # Only our own AdSense publisher relationship is left below.
 #
-# TO RESTORE the full managed list:
-#   git show 0ab3ef5:ads.txt > ads.txt
+# TO RESTORE the full managed list, either:
+#   git show 60b77b9:ads.txt > ads.txt
 # or run the "Sync ads.txt from Ezoic" workflow manually from the Actions tab.
+#
+# Use 60b77b9 rather than 0ab3ef5 - both hold the same 120 entries, but 60b77b9
+# is the bot's byte-exact copy of what Ezoic serves (their file carries trailing
+# whitespace on every line; the earlier hand-transcribed version did not).
 #
 # The scheduled run of that workflow is commented out in
 # .github/workflows/ads-txt-sync.yml so it cannot refill this file mid-setup.
