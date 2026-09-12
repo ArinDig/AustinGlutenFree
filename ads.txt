@@ -9,6 +9,8 @@ ezoic.ai, 4d1f6f6ed38f46a0c2b970dc2eba73d0, DIRECT
 # 35
 google.com, pub-6644558441501035, DIRECT, f08c47fec0942fa0
 google.com, pub-1175987143200523, RESELLER, f08c47fec0942fa0
+google.com, pub-4152552776930088, DIRECT, f08c47fec0942fa0
+media.net, 8CAAT6RE8, DIRECT
 # 36
 sharethrough.com, PmzCMtAd, DIRECT, d53b998a7bd4ecd2
 google.com, pub-9508156287817487, RESELLER, f08c47fec0942fa0
