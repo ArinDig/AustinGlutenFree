@@ -140,8 +140,8 @@ trustedstack.com, TS6AW3770, DIRECT
 rubiconproject.com, 26144, RESELLER, 0bfd66d529a55807
 pubmatic.com, 164187, RESELLER, 5d62403b186f2ace
 video.unrulymedia.com, 799061815, RESELLER
-sharethrough.com, KGPeiFc6, RESELLER, d53b998a7bd4ecd2
-trustedstack.com, TS9HJFH44, DIRECT
+smaato.com, 1100060509, RESELLER, 07bcf65f187117b4
+onetag.com, 87f58fe90234d0e, RESELLER
 # 11397
 blis.com, 1246, DIRECT, 61453ae19a4b73f4
 rubiconproject.com, 16928, RESELLER, 0bfd66d529a55807
