@@ -1032,6 +1032,21 @@ const restaurants = [
         website: "gatiatx.com",
         images: ["images/restaurants/Gati-1.jpg", "images/restaurants/Gati-2.jpg", "images/restaurants/Gati-3.jpg", "images/restaurants/Gati-4.jpg"],
         icon: "fas fa-birthday-cake"
+    },
+    {
+        id: 60,
+        name: "Qi Austin",
+        slug: "qi-austin",
+        cuisine: "asian",
+        neighborhood: "downtown",
+        price: "$$$",
+        rating: 4.4,
+        description: "Chef Ling Qi Wu's modern Chinese and dim sum restaurant on West 6th marks more than 30 dishes gluten-free on its own menu, including gluten-free dumplings, fried rice and a rice-noodle dish. Not a dedicated kitchen: order from the GF-labeled items and ask about the fryer before ordering anything crispy. Recommended to us by a celiac regular.",
+        features: ["30+ Dishes Marked GF", "GF Dumplings", "GF Fried Rice", "Weekend Dim Sum"],
+        location: "Downtown (West 6th)",
+        address: "835 W 6th St, Suite 114, Austin, TX 78703",
+        phone: "(512) 474-2777",
+        icon: "fas fa-bowl-food"
     }
 ];
 

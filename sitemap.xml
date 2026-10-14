@@ -344,7 +344,7 @@
     </url>
     <url>
         <loc>https://austinglutenfree.com/guides/gluten-free-downtown-austin.html</loc>
-        <lastmod>2026-10-11</lastmod>
+        <lastmod>2026-10-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -567,6 +567,12 @@
     <url>
         <loc>https://austinglutenfree.com/restaurants/gati-cafe.html</loc>
         <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://austinglutenfree.com/restaurants/qi-austin.html</loc>
+        <lastmod>2026-10-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
