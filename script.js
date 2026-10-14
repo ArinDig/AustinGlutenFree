@@ -1046,6 +1046,7 @@ const restaurants = [
         location: "Downtown (West 6th)",
         address: "835 W 6th St, Suite 114, Austin, TX 78703",
         phone: "(512) 474-2777",
+        images: ["images/restaurants/Qi-1.jpg", "images/restaurants/Qi-2.jpg"],
         icon: "fas fa-bowl-food"
     }
 ];

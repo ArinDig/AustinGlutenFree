@@ -45,14 +45,14 @@
     <meta property="og:url" content="https://austinglutenfree.com/restaurants/qi-austin.html">
     <meta property="og:title" content="Qi Austin | Gluten-Free Dumplings and 30+ GF Dishes Downtown">
     <meta property="og:description" content="Qi Austin on West 6th labels more than 30 dishes gluten-free on its own menu, including gluten-free dumplings &mdash; rare for a Chinese restaurant. Not a dedicated kitchen; here is what to order and what to ask.">
-    <meta property="og:image" content="https://austinglutenfree.com/images/og-default.jpg">
+    <meta property="og:image" content="https://austinglutenfree.com/images/restaurants/Qi-1.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://austinglutenfree.com/restaurants/qi-austin.html">
     <meta property="twitter:title" content="Qi Austin | Gluten-Free Dumplings and 30+ GF Dishes Downtown">
     <meta property="twitter:description" content="Qi Austin on West 6th labels more than 30 dishes gluten-free on its own menu, including gluten-free dumplings &mdash; rare for a Chinese restaurant. Not a dedicated kitchen; here is what to order and what to ask.">
-    <meta property="twitter:image" content="https://austinglutenfree.com/images/og-default.jpg">
+    <meta property="twitter:image" content="https://austinglutenfree.com/images/restaurants/Qi-1.jpg">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://austinglutenfree.com/restaurants/qi-austin.html">
@@ -71,7 +71,7 @@
     "servesCuisine": "Chinese, Dim Sum",
     "priceRange": "$$$",
     "telephone": "+1-512-474-2777",
-    "image": "https://austinglutenfree.com/images/og-default.jpg",
+    "image": "https://austinglutenfree.com/images/restaurants/Qi-1.jpg",
     "address": {
         "@type": "PostalAddress",
         "streetAddress": "835 W 6th St, Suite 114",
@@ -158,6 +158,15 @@
         <section class="restaurant-hero">
             <div class="container">
                 <div class="restaurant-header">
+                    <div class="restaurant-images">
+                        <div class="image-gallery">
+                            <img src="../images/restaurants/Qi-1.jpg" alt="Dining room at Qi Austin with painted paper parasols and red lanterns over the bar" class="main-image" loading="eager" decoding="async" width="600" height="400">
+                            <div class="thumbnail-gallery">
+                                <img src="../images/restaurants/Qi-1.jpg" alt="Dining room at Qi Austin with painted paper parasols and red lanterns over the bar" class="thumbnail active" onclick="changeMainImage(this)">
+                                <img src="../images/restaurants/Qi-2.jpg" alt="Salt and pepper shrimp with jalapenos and onions, marked gluten-free on Qi Austin's menu" class="thumbnail" loading="lazy" decoding="async" onclick="changeMainImage(this)">
+                            </div>
+                        </div>
+                    </div>
                     <div class="restaurant-info">
                         <h1>Qi Austin: Modern Asian Kitchen</h1>
                         <div class="quick-info">
@@ -281,5 +290,13 @@
             </div>
         </div>
     </footer>
+    <script>
+    function changeMainImage(thumbnail) {
+        const mainImage = document.querySelector('.main-image');
+        mainImage.src = thumbnail.src;
+        document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+        thumbnail.classList.add('active');
+    }
+    </script>
 </body>
 </html>
