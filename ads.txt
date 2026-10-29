@@ -32,6 +32,7 @@ sonobi.com, f4e5b5299c, DIRECT, d1a215d9eb5aee9e
 # 10050
 themediagrid.com, 2RT75Y, DIRECT, 9fac4a4a87c2a44f
 pubmatic.com, 168313, RESELLER, 5d62403b186f2ace
+themediagrid.com, 24RTGQ, DIRECT, 9fac4a4a87c2a44f
 # 10057
 aps.amazon.com, aa05931b-5308-4ea3-95a2-adf84f4ffde4, DIRECT
 indexexchange.com, 193192, DIRECT, 50b1c356f2c5c8fc
