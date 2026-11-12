@@ -45,14 +45,16 @@ const restaurants = [
     {
         id: 3,
         name: "Casa de Luz",
-        cuisine: "mexican",
-        neighborhood: "east-austin",
+        // Corrected Nov 2026: Toomey Rd is Casa de Luz's only location on its site; it is NOT
+        // confirmed 100% GF (no GF claim on its site; whole grains and oat porridge). Asked the restaurant.
+        cuisine: "cafe",
+        neighborhood: "south-austin",
         price: "$$",
         rating: 4.4,
-        description: "Plant-based Mexican cuisine with many naturally gluten-free options. Fresh, organic ingredients and a warm, community atmosphere.",
-        features: ["Plant-Based", "Organic", "Community Space"],
-        location: "East Austin",
-        address: "1000 E 11th St, Austin, TX 78702",
+        description: "Plant-based macrobiotic community kitchen near Zilker with a daily-changing set plate. Often described as gluten-free, but the restaurant doesn't publish that and meals include whole grains and oats, so celiacs should ask first.",
+        features: ["Plant-Based", "Organic", "Ask About Grains & Oats"],
+        location: "South Austin (Zilker)",
+        address: "1701 Toomey Rd, Austin, TX 78704",
         phone: "(512) 476-2535",
         website: "casadeluz.org",
         icon: "fas fa-pepper-hot",
