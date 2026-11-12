@@ -259,8 +259,10 @@ const restaurants = [
         neighborhood: "south-austin",
         price: "$$",
         rating: 4.6,
-        description: "Gluten-free donut shop and coffee house in Sunset Valley. Specializes in artisanal gluten-free donuts and premium coffee.",
-        features: ["100% GF", "Donuts", "Coffee", "Celiac Safe"],
+        // Corrected Nov 2026: NOT a dedicated GF bakery (reader report; Bougie's makes wheat donuts too
+        // and its own site makes no gluten-free-kitchen claim). Do not re-label as 100% GF.
+        description: "Gourmet donut shop and espresso bar in Sunset Valley that sells gluten-free donuts alongside regular wheat donuts. Not a dedicated gluten-free kitchen: if you have celiac disease, ask how the GF donuts are made and fried.",
+        features: ["GF Donuts Available", "Shared Kitchen", "Coffee"],
         location: "Sunset Valley (South Austin)",
         address: "5400 Brodie Ln, Suite 930, Sunset Valley, TX 78745",
         phone: "(512) 382-1617",
